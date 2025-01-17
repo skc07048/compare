@@ -2,7 +2,25 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+:root {
+  /* color */
+  --pointcolor: #007bff;
+  --btn-hover-color: #0051ff;
+  --background-gradient: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  /* font-size */
+  --xl-font-size: 52px;
+  --lg-font-size: 45px;
+  --md-font-size: 38px;
+  --sm-font-size: 24px;
+  --xs-font-size: 18px;
+  --xxs-font-size: 14px;
+  /* line-height */
+  --xl-line-height: 58px;
+  --md-line-height: 44px;
+  --sm-line-height: 30px;
+  --xs-line-height: 26px;
+  --xxs-line-height: 20px;
+}
 html,
 body,
 div,

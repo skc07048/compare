@@ -1,12 +1,7 @@
 @charset "utf-8";
 @import url("./reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
-:root {
-  --pointcolor: #007bff;
-  --btn_hover_color: #0051ff;
-  --title_font-size: 45px;
-  --title_font-weight: bold;
-}
+
 body {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
@@ -21,6 +16,8 @@ body {
 header {
   width: 100%;
   height: 100px;
+  position: fixed;
+  z-index: 99;
 }
 header > .head_con {
   width: 1600px;
@@ -89,10 +86,15 @@ h1 > a {
 .icon_wrap > a:hover {
   transform: scale(1.2);
 }
+main {
+}
 /* main_banner */
 .main_banner {
+  position: relative;
+  top: 100;
   width: 100%;
   height: 1000px;
+  background-image: var(--background-gradient);
 }
 
 .main_con {
@@ -101,7 +103,6 @@ h1 > a {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  background: url(../img/background/main-background.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -206,8 +207,8 @@ h1 > a {
 .chat_wrap > h2 {
   width: fit-content;
   height: fit-content;
-  font-size: var(--title_font-size);
-  font-weight: var(--title_font-weight);
+  font-size: var(--lg-font-size);
+  font-weight: 600;
   position: relative;
   margin-left: 72px;
   margin-bottom: 70px;
@@ -434,8 +435,8 @@ h1 > a {
 .prt_wrap > h2 {
   width: fit-content;
   height: fit-content;
-  font-size: var(--title_font-size);
-  font-weight: var(--title_font-weight);
+  font-size: var(--lg-font-size);
+  font-weight: 600;
   position: relative;
   margin-bottom: 70px;
   margin-left: auto;
@@ -578,8 +579,8 @@ h1 > a {
 .guide_wrap > h2 {
   width: fit-content;
   height: fit-content;
-  font-size: var(--title_font-size);
-  font-weight: var(--title_font-weight);
+  font-size: var(--lg-font-size);
+  font-weight: 600;
   margin: 0 auto;
   margin-bottom: 70px;
   position: relative;
@@ -680,8 +681,8 @@ h1 > a {
 .sec4 > h2 {
   width: fit-content;
   height: fit-content;
-  font-size: var(--title_font-size);
-  font-weight: var(--title_font-weight);
+  font-size: var(--lg-font-size);
+  font-weight: 600;
   margin: 0 auto;
   margin-bottom: 60px;
   position: relative;
@@ -826,8 +827,8 @@ h1 > a {
 .sec5 > h2 {
   width: fit-content;
   height: fit-content;
-  font-size: var(--title_font-size);
-  font-weight: var(--title_font-weight);
+  font-size: var(--lg-font-size);
+  font-weight: 600;
   margin: 0 auto;
   position: relative;
   margin-bottom: 60px;
