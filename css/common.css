@@ -1,7 +1,7 @@
 /* 전체 컨테이너 */
 body {
   background-color: #000;
-  font-family: "Noto Sans KR", sans-serif, "JalnanGothic", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif, 'JalnanGothic', sans-serif;
   font-size: 16px;
   color: #fff;
 }
@@ -11,6 +11,26 @@ body {
   height: auto;
   margin: 0 auto;
   overflow: hidden;
+}
+
+h2:not(.main_title) {
+  width: fit-content;
+  height: fit-content;
+  font-size: var(--lg-font-size);
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 60px;
+}
+h2::after {
+  content: 'symbol';
+  font-size: 0px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url(../img/icons/symbol.svg) no-repeat;
+  position: absolute;
+  top: -30px;
+  right: -30px;
 }
 
 /* 헤더 */
@@ -55,7 +75,7 @@ h1 > a {
 }
 
 #gnb::after {
-  content: "header-background";
+  content: 'header-background';
   font-size: 0;
   width: 100vw;
   position: absolute;
