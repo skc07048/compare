@@ -1,3 +1,101 @@
 @charset "utf-8";
-@import url('./reset.css');
-@import url('./common.css');
+@import url("./reset.css");
+@import url("./common.css");
+/* 스타일 패키지 메인 컨텐츠 영역 */
+.main_guide {
+  width: 100%;
+  height: 1000px;
+  padding: 100px 0;
+  background-image: var(--background-gradient);
+}
+.main_wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  background-image: url("../img/sub/sub_styleguide/sub2_main/3D\ Paths\ -\ Lines\ 1\ -\ Copy@1-1707x979\ 1.png");
+  background-position: center;
+}
+/* 메인 이미지 영역 */
+.main_image {
+  width: 420px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+  border-radius: 30px;
+  transform: rotate(-15deg);
+}
+.main_image > a {
+  width: 100%;
+  height: 100%;
+}
+.main_image > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  filter: opacity(0.8);
+  transition: 0.5s;
+  will-change: transform;
+}
+.main_image:hover img {
+  transform: rotate(15deg);
+  filter: opacity(1);
+}
+/* 베스트 스타일 컨텐츠 영역 */
+.best_style {
+  padding: 200px 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+}
+.best_wrap {
+  width: 100%;
+  height: 100%;
+}
+.best_wrap > h2 {
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.best_image_con {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.best_image {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+}
+.best_image_con > .best_image:nth-child(1) {
+  left: -300px;
+}
+.best_image_con > .best_image:nth-child(2) {
+  left: 200px;
+}
+.best_image_con > .best_image:nth-child(3) {
+  left: 700px;
+}
+.best_image_con > .best_image:nth-child(4) {
+  right: 200px;
+}
+.best_image_con > .best_image:nth-child(5) {
+  right: -300px;
+}
+.best_image > a {
+  width: 100%;
+  height: 100%;
+  border-radius: 300px;
+}
+.best_image > a > img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 300px;
+}

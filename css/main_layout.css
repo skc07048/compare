@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import url('./reset.css');
-@import url('./common.css');
+@import url("./reset.css");
+@import url("./common.css");
 
 /* 메인 배너 */
 .main_banner {
@@ -17,6 +17,7 @@
   position: absolute;
   top: 200px;
   left: 560px;
+  right: 0;
   animation: bg_img 30s linear 0s infinite;
 }
 /* 메인 컨테츠 영역 */
@@ -28,12 +29,12 @@
   padding: 60px 0;
 }
 .main_wrap > .main_title {
-  font-family: 'JalnanGothic', sans-serif;
+  font-family: "JalnanGothic", sans-serif;
   font-size: var(--xl-font-size);
   line-height: var(--xl-line-height);
 }
 .main_wrap > .main_title > span {
-  font-family: 'JalnanGothic', sans-serif;
+  font-family: "JalnanGothic", sans-serif;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #fff;
 }
@@ -67,7 +68,7 @@
   left: 20px;
   opacity: 0;
   transform: translateX(-100px);
-  transition: 0.5s;
+  transition: 1s;
 }
 .main_box > .more > a {
   width: 100%;
@@ -92,7 +93,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 /* 메인 컨텐츠 마우스 오버 */
 .main_box:hover img {
@@ -100,7 +101,7 @@
 }
 .main_box:hover .more {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(0) rotate(360deg);
 }
 
 .sec1 {
@@ -278,7 +279,7 @@
   width: 420px;
 }
 .chat_box:first-of-type > div:nth-child(1) > p:nth-child(2)::after {
-  content: 'picture';
+  content: "picture";
   font-size: 0;
   display: block;
   width: 26px;
@@ -290,7 +291,7 @@
   top: 25px;
 }
 .chat_box:nth-of-type(2) > div:nth-child(1) > p:nth-child(1)::after {
-  content: 'arrow';
+  content: "arrow";
   font-size: 0;
   display: block;
   width: 26px;
@@ -302,7 +303,7 @@
   top: 25px;
 }
 .chat_box:nth-of-type(3) > div:nth-child(1) > p:nth-child(1)::after {
-  content: 'symbol';
+  content: "symbol";
   font-size: 0;
   display: block;
   width: 26px;
@@ -464,7 +465,8 @@
   width: 600px;
   height: 800px;
   z-index: 100;
-  transition: 0.5s;
+  transition: 1.5s;
+  will-change: transform;
 }
 .style_image:nth-child(1) {
   transform: translateY(35px) rotate(-7deg);
@@ -483,7 +485,7 @@
   border-radius: 30px;
 }
 .style_image:hover {
-  transform: translateY(-30px);
+  transform: translateY(-30px) rotateY(180deg);
 }
 /* sec4 */
 .sec4 {
