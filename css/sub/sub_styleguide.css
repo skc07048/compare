@@ -1,13 +1,17 @@
 @charset "utf-8";
-@import url("./reset.css");
-@import url("./common.css");
+@import url('../reset.css');
+@import url('../common.css');
 
 /* 스타일 패키지 메인 컨텐츠 영역 */
 .main_guide {
   width: 100%;
   height: 1000px;
   padding: 100px 0;
-  background-image: var(--background-gradient);
+  background: var(--background-gradient),
+    url(../../img/sub/sub_styleguide/sub2_main/3D\ Paths\ -\ Lines\ 1\ -\ Copy@1-1707x979\ 1.png)
+      no-repeat;
+  background-position: center;
+  background-blend-mode: screen;
 }
 .main_wrap {
   width: 100%;
@@ -16,9 +20,6 @@
   justify-content: space-evenly;
   align-items: center;
   position: relative;
-  background: url("../img/sub/sub_styleguide/sub2_main/3D\ Paths\ -\ Lines\ 1\ -\ Copy@1-1707x979\ 1.png")
-    no-repeat;
-  background-position: center;
 }
 /* 메인 이미지 영역 */
 .main_image {

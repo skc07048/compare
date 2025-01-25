@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import url("./reset.css");
-@import url("./common.css");
+@import url('./reset.css');
+@import url('./common.css');
 
 /* 메인 배너 */
 .main_banner {
@@ -29,14 +29,9 @@
   padding: 60px 0;
 }
 .main_wrap > .main_title {
-  font-family: "JalnanGothic", sans-serif;
+  font-family: 'JalnanGothic', sans-serif;
   font-size: var(--xl-font-size);
   line-height: var(--xl-line-height);
-}
-.main_wrap > .main_title > span {
-  font-family: "JalnanGothic", sans-serif;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #fff;
 }
 .main_con {
   display: flex;
@@ -279,7 +274,7 @@
   width: 420px;
 }
 .chat_box:first-of-type > div:nth-child(1) > p:nth-child(2)::after {
-  content: "picture";
+  content: 'picture';
   font-size: 0;
   display: block;
   width: 26px;
@@ -291,7 +286,7 @@
   top: 25px;
 }
 .chat_box:nth-of-type(2) > div:nth-child(1) > p:nth-child(1)::after {
-  content: "arrow";
+  content: 'arrow';
   font-size: 0;
   display: block;
   width: 26px;
@@ -303,7 +298,7 @@
   top: 25px;
 }
 .chat_box:nth-of-type(3) > div:nth-child(1) > p:nth-child(1)::after {
-  content: "symbol";
+  content: 'symbol';
   font-size: 0;
   display: block;
   width: 26px;
