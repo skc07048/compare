@@ -1,24 +1,13 @@
 @charset "utf-8";
-@import url('./reset.css');
-@import url('./common.css');
+@import url("./reset.css");
+@import url("./common.css");
 
 /* 메인 배너 */
 .main_banner {
-  position: relative;
-  width: 100%;
+  width: 100vw;
   height: 1000px;
   padding: 100px 0;
   background-image: var(--background-gradient);
-}
-/* 메인 배경 */
-.main_bg {
-  width: 800px;
-  height: 800px;
-  position: absolute;
-  top: 200px;
-  left: 560px;
-  right: 0;
-  animation: bg_img 30s linear 0s infinite;
 }
 /* 메인 컨테츠 영역 */
 .main_wrap {
@@ -28,10 +17,39 @@
   z-index: 99;
   padding: 60px 0;
 }
+
 .main_wrap > .main_title {
-  font-family: 'JalnanGothic', sans-serif;
+  font-family: "JalnanGothic", sans-serif;
   font-size: var(--xl-font-size);
   line-height: var(--xl-line-height);
+  opacity: 0;
+  animation: text-left 2s ease-in-out 1s 1 forwards;
+}
+@keyframes text-left {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.main_wrap > .main_title:last-child {
+  float: right;
+  text-align: right;
+  opacity: 0;
+  animation: text-right 2s ease-in-out 2s 1 forwards;
+}
+@keyframes text-right {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 0.4;
+  }
 }
 .main_con {
   display: flex;
@@ -99,7 +117,7 @@
   transform: translateX(0) rotate(360deg);
 }
 
-.sec1 {
+#sec1 {
   width: 100%;
   height: auto;
   padding: 400px 0;
@@ -113,7 +131,7 @@
   bottom: -70px;
   animation: bg_img 15s linear 0s infinite;
 }
-.sec1 > h2 {
+#sec1 > h2 {
   margin-left: 70px;
 }
 .chat_wrap {
@@ -274,7 +292,7 @@
   width: 420px;
 }
 .chat_box:first-of-type > div:nth-child(1) > p:nth-child(2)::after {
-  content: 'picture';
+  content: "picture";
   font-size: 0;
   display: block;
   width: 26px;
@@ -286,7 +304,7 @@
   top: 25px;
 }
 .chat_box:nth-of-type(2) > div:nth-child(1) > p:nth-child(1)::after {
-  content: 'arrow';
+  content: "arrow";
   font-size: 0;
   display: block;
   width: 26px;
@@ -298,7 +316,7 @@
   top: 25px;
 }
 .chat_box:nth-of-type(3) > div:nth-child(1) > p:nth-child(1)::after {
-  content: 'symbol';
+  content: "symbol";
   font-size: 0;
   display: block;
   width: 26px;
@@ -310,7 +328,7 @@
   top: 25px;
 }
 /* sec2 */
-.sec2 {
+#sec2 {
   width: 100%;
   height: 100%;
   padding: 300px 0;
@@ -418,7 +436,7 @@
   transform: translateY(-3px);
 }
 /* sec 3 */
-.sec3 {
+#sec3 {
   width: 100%;
   height: 100%;
   padding: 200px 0;
@@ -483,13 +501,13 @@
   transform: translateY(-30px) rotateY(180deg);
 }
 /* sec4 */
-.sec4 {
+#sec4 {
   width: 100%;
   height: auto;
   padding: 400px 0;
   position: relative;
 }
-.sec4 > h2 {
+#sec4 > h2 {
   margin: 0 auto;
   margin-bottom: 60px;
 }
