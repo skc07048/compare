@@ -49,17 +49,14 @@
   filter: opacity(1);
 }
 /* 베스트 스타일 컨텐츠 영역 */
-.best_style {
+#best_style {
   padding: 200px 0;
   box-sizing: border-box;
   width: 100%;
   height: 1000px;
   overflow: hidden;
 }
-/* 타이틀 */
-.best_style > h2 {
-  margin: 0 auto;
-}
+
 .best_wrap {
   width: 100vw;
   height: 100%;
@@ -96,7 +93,7 @@
   transform: scale(1.1);
 }
 /* 스타일 가이드 컨텐츠 영역 */
-.style_guide {
+#style_guide {
   padding: 200px 0;
   box-sizing: border-box;
   overflow: hidden;
@@ -105,10 +102,7 @@
   width: 100%;
   height: auto;
 }
-.style_con > h2 {
-  margin: 0 auto;
-  margin-bottom: 60px;
-}
+
 /* 스타일 가이드 메뉴 영역 */
 .style_menu {
   width: 1600px;
@@ -211,7 +205,7 @@
   transform: translateY(-10px);
 }
 /* 스타일 룩북 컨텐츠 영역 */
-.lookbook {
+#lookbook {
   padding: 200px 0;
   box-sizing: border-box;
   overflow: hidden;
@@ -220,11 +214,7 @@
   width: 100%;
   height: 100%;
 }
-/* 타이틀  */
-.lookbook_con > h2 {
-  margin: 0 auto;
-  margin-bottom: 60px;
-}
+
 /* 메뉴 영역 */
 .lookbook_menu {
   width: 1600px;

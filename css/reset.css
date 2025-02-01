@@ -10,13 +10,13 @@
   /* font-size */
   --xl-font-size: 52px;
   --lg-font-size: 45px;
-  --md-font-size: 38px;
+  --md-font-size: 32px;
   --sm-font-size: 24px;
   --xs-font-size: 18px;
   --xxs-font-size: 14px;
   /* line-height */
   --xl-line-height: 58px;
-  --md-line-height: 44px;
+  --md-line-height: 40px;
   --sm-line-height: 30px;
   --xs-line-height: 26px;
   --xxs-line-height: 20px;
@@ -138,7 +138,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
