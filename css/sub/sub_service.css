@@ -1,3 +1,35 @@
 @charset "utf-8";
-@import url('../reset.css');
-@import url('../common.css');
+@import url("../reset.css");
+@import url("../common.css");
+
+/* 서비스 메인 컨텐츠 */
+#service_main {
+  width: 100%;
+  height: 900px;
+  padding: 100px 0;
+  overflow: hidden;
+  background: var(--background-gradient);
+}
+.main_service_con {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.service_bg {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  mix-blend-mode: overlay;
+}
+.service_bg:nth-child(2) {
+  position: absolute;
+  top: 400px;
+  left: 0;
+}
+.service_bg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
