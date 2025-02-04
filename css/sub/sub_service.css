@@ -11,15 +11,17 @@
   background: var(--background-gradient);
 }
 .main_service_con {
+  position: relative;
+
   width: 100%;
   height: 100%;
-  position: relative;
 }
+/* 메인 배경 이미지 영역 */
 .service_bg {
   width: 600px;
   height: 600px;
   position: absolute;
-  top: 0;
+  top: -50px;
   right: 0;
   mix-blend-mode: overlay;
 }
@@ -32,4 +34,182 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* 메인 텍스트 영역 */
+.text_box {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 80px;
+  left: 250px;
+  text-align: center;
+  line-height: 1.2;
+  mix-blend-mode: overlay;
+  animation: text 1s linear 1s 1 forwards;
+  transition: 1s;
+  opacity: 0;
+}
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.text_box > p {
+  font-size: 80px;
+  font-weight: 900;
+  color: #000;
+}
+.text_box > p:nth-child(2) {
+  color: #444;
+}
+.text_box > p:nth-child(3) {
+  color: #595959;
+}
+/* 메인 이미지 영역 */
+.service_main_img {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 100px;
+  right: 400px;
+  mix-blend-mode: overlay;
+}
+/* 주요 서비스 컨텐츠 */
+#important_service {
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+}
+.important_con {
+  width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+}
+.card_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+/* 카드 영역 */
+.service_card {
+  width: 450px;
+  height: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+  border-radius: 30px;
+  transition: 1s;
+}
+.service_card > a {
+  width: 100%;
+  height: 100%;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+.service_card > a > div {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.service_card > a > p {
+  font-size: var(--md-font-size);
+  line-height: var(--md-line-height);
+  text-align: center;
+  font-weight: 600;
+}
+.service_card:hover {
+  transform: rotateY(180deg);
+}
+/* 지원 서비스 컨텐츠 */
+#support_service {
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+}
+.support_con {
+  width: 1600px;
+  height: auto;
+  margin: 0 auto;
+}
+.support_wrap {
+  width: 100%;
+  height: 100%;
+}
+.support_box {
+  width: 100%;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+  border-radius: 50px;
+
+  margin-bottom: 40px;
+}
+.support_box > a {
+  width: 100%;
+  height: 100%;
+  padding: 0 80px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.support_box h3 {
+  font-size: var(--lg-font-size);
+  line-height: var(--lg-line-height);
+  font-weight: 400;
+}
+.support_box > a > img {
+  width: 50px;
+  height: 50px;
+}
+/* 이용 약관 컨텐츠 */
+#terms_service {
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+}
+.terms_con {
+  width: 1600px;
+  height: auto;
+  margin: 0 auto;
+}
+.terms_wrap {
+  width: 100%;
+  height: 100%;
+}
+.terms_box {
+  width: 100%;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+  border-radius: 50px;
+
+  margin-bottom: 40px;
+}
+.terms_box > a {
+  width: 100%;
+  height: 100%;
+  padding: 0 80px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.terms_box h3 {
+  font-size: var(--lg-font-size);
+  line-height: var(--lg-line-height);
+  font-weight: 400;
+}
+.terms_box > a > img {
+  width: 50px;
+  height: 50px;
 }
