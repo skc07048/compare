@@ -6,6 +6,11 @@
     <title>Compare</title>
     <!-- css -->
     <link rel="stylesheet" href="./css/main_layout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -80,30 +85,30 @@
         <!-- 플러팅 버튼 -->
         <div class="floating_wrap">
           <div class="floating_btn">
-          <a href="#sec1">
-            <p>소통</p>
-            <img src="./img/common/Full Battery.svg" alt="버튼">
-          </a>
+            <a href="#sec1">
+              <p>소통</p>
+              <img src="./img/common/Full Battery.svg" alt="버튼" />
+            </a>
           </div>
           <div class="floating_btn">
-          <a href="#sec2">
-            <p>포트폴리오</p>
-            <img src="./img/common/Charged Battery.svg" alt="버튼">
-          </a>
+            <a href="#sec2">
+              <p>포트폴리오</p>
+              <img src="./img/common/Charged Battery.svg" alt="버튼" />
+            </a>
           </div>
           <div class="floating_btn">
-          <a href="#sec3">
-            <p>코디가이드</p>
-            <img src="./img/common/Battery Level.svg" alt="버튼">
-          </a>
+            <a href="#sec3">
+              <p>코디가이드</p>
+              <img src="./img/common/Battery Level.svg" alt="버튼" />
+            </a>
           </div>
           <div class="floating_btn">
-          <a href="#sec4">
-            <p>리뷰 및<br/>이용가이드</p>
-            <img src="./img/common/Empty Battery.svg" alt="버튼">
-          </a>
+            <a href="#sec4">
+              <p>리뷰 및<br />이용가이드</p>
+              <img src="./img/common/Empty Battery.svg" alt="버튼" />
+            </a>
           </div>
-         </div>
+        </div>
         <!-- 메인 배너 -->
         <section class="main_banner">
           <div class="main_wrap">
@@ -111,41 +116,75 @@
               세상의 모든 스타일로<br />
               소통하는 공간
             </h2>
-            <div class="main_con mySwiper">
-            <div class="main_box">
-              <a href="#">
-                <img src="./img/main/main_img/main-img1.jpg" alt="메인이미지1" />
-              </a>
-              <div class="more">
-                <a href="#">
-            <img src="./img/common/plus.svg" alt="플러스 버튼">
-          </a>
-          </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/main/main_img/main-img1.jpg" alt="메인이미지1" />
+                  </a>
+                  <div class="more">
+                    <a href="#">
+                      <img src="./img/common/plus.svg" alt="플러스 버튼" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/main/main_img/main-img2.jpg" alt="메인이미지2" />
+                  </a>
+                  <div class="more">
+                    <a href="#">
+                      <img src="./img/common/plus.svg" alt="플러스 버튼" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/main/main_img/main-img3.jpg" alt="메인이미지3" />
+                  </a>
+                  <div class="more">
+                    <a href="#">
+                      <img src="./img/common/plus.svg" alt="플러스 버튼" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/main/main_img/main-img3.jpg" alt="메인이미지3" />
+                  </a>
+                  <div class="more">
+                    <a href="#">
+                      <img src="./img/common/plus.svg" alt="플러스 버튼" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/main/main_img/main-img3.jpg" alt="메인이미지3" />
+                  </a>
+                  <div class="more">
+                    <a href="#">
+                      <img src="./img/common/plus.svg" alt="플러스 버튼" />
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/main/main_img/main-img3.jpg" alt="메인이미지3" />
+                  </a>
+                  <div class="more">
+                    <a href="#">
+                      <img src="./img/common/plus.svg" alt="플러스 버튼" />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="main_box">
-              <a href="#">
-                <img src="./img/main/main_img/main-img2.jpg" alt="메인이미지2" />
-              </a>
-              <div class="more">
-                <a href="#">
-                  <img src="./img/common/plus.svg" alt="플러스 버튼">
-          </a>
-          </div>
-            </div>
-            <div class="main_box">
-              <a href="#">
-                <img src="./img/main/main_img/main-img3.jpg" alt="메인이미지3" />
-              </a>
-              <div class="more">
-                <a href="#">
-                  <img src="./img/common/plus.svg" alt="플러스 버튼">
-          </a>
-          </div>
-            </div>
-          </div>
-          <h2 class="main_title">
-            모든 개성과 감각이<br/> 어우러지는 패션 서비스
-          </h2>
+            <script src="./js/slide.js"></script>
+            <h2 class="main_title">
+              모든 개성과 감각이<br />
+              어우러지는 패션 서비스
+            </h2>         
         </section>
         <!-- sec1 -->
         <section id="sec1">
@@ -156,7 +195,7 @@
             />
           </div>
           <!-- 타이틀 -->
-            <h2>사용자와 패션 디자이너의 소통</h2>
+          <h2>사용자와 패션 디자이너의 소통</h2>
           <div class="chat_wrap">
             <div class="chat_con">
               <!-- sec1 왼쪽 영역 -->
@@ -224,16 +263,28 @@
               <!-- 왼쪽 영역 -->
               <div class="prt_left">
                 <a href="#">
-                  <img src="./img/main/main_sec2/prt_image1.jpg" alt="이미지1" />
+                  <img
+                    src="./img/main/main_sec2/prt_image1.jpg"
+                    alt="이미지1"
+                  />
                 </a>
                 <a href="#">
-                  <img src="./img/main/main_sec2/prt_image2.jpg" alt="이미지2" />
+                  <img
+                    src="./img/main/main_sec2/prt_image2.jpg"
+                    alt="이미지2"
+                  />
                 </a>
                 <a href="#">
-                  <img src="./img/main/main_sec2/prt_image3.jpg" alt="이미지3" />
+                  <img
+                    src="./img/main/main_sec2/prt_image3.jpg"
+                    alt="이미지3"
+                  />
                 </a>
                 <a href="#">
-                  <img src="./img/main/main_sec2/prt_image4.jpg" alt="이미지4" />
+                  <img
+                    src="./img/main/main_sec2/prt_image4.jpg"
+                    alt="이미지4"
+                  />
                 </a>
               </div>
               <!-- 오른쪽 영역 -->
@@ -255,27 +306,26 @@
           <!-- 스타일 가이드 컨텐츠 -->
           <div class="style_wrap">
             <!-- 타이틀 -->
-              <h2>패션 디자이너가 추천하는 코디가이드</h2>
-          <!-- 컨텐츠 이미지 영역 -->
-          <div class="style_con">
-            <div class="style_image">
-              <a href="#">
-                <img src="./img/main/main_sec3/sec3-3.jpg" alt="sec3_img1">
-              </a>
-            </div>
-            <div class="style_image">
-              <a href="#">
-                <img src="./img/main/main_sec3/sec3-10.jpg" alt="sec3_img2">
-              </a>
-            </div>
-            <div class="style_image">
-              <a href="#">
-                <img src="./img/main/main_sec3/sec3-2.jpg" alt="sec3_img3">
-              </a>
+            <h2>패션 디자이너가 추천하는 코디가이드</h2>
+            <!-- 컨텐츠 이미지 영역 -->
+            <div class="style_con">
+              <div class="style_image">
+                <a href="#">
+                  <img src="./img/main/main_sec3/sec3-3.jpg" alt="sec3_img1" />
+                </a>
+              </div>
+              <div class="style_image">
+                <a href="#">
+                  <img src="./img/main/main_sec3/sec3-10.jpg" alt="sec3_img2" />
+                </a>
+              </div>
+              <div class="style_image">
+                <a href="#">
+                  <img src="./img/main/main_sec3/sec3-2.jpg" alt="sec3_img3" />
+                </a>
+              </div>
             </div>
           </div>
-          </div>
-
         </section>
         <!-- sec4 -->
         <section id="sec4">
@@ -311,7 +361,10 @@
               </div>
               <div class="review_point">
                 <p>5.0</p>
-                <img src="./img/main/main_sec5/star-point.png" alt="star point" />
+                <img
+                  src="./img/main/main_sec5/star-point.png"
+                  alt="star point"
+                />
               </div>
               <p>
                 스무살 되자마자 주위 친구들은 다들 예쁘게 입고 다니는게 너무
@@ -367,7 +420,10 @@
             <div class="info_bottom">
               <div class="package_left">
                 <a href="#">
-                  <img src="./img/main/main_sec5/sec5-2.jpg" alt="package image" />
+                  <img
+                    src="./img/main/main_sec5/sec5-2.jpg"
+                    alt="package image"
+                  />
                 </a>
               </div>
               <div class="package_right">
@@ -431,7 +487,8 @@
             <a href="#">ⓒ COMPARE Corp. All rights reserved</a>
           </div>
         </div>
-      </footer>     
+      </footer>
+      
     </div>
   </body>
 </html>
