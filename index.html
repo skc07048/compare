@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Compare</title>
     <!-- css -->
-    <link rel="stylesheet" href="./css/main_layout.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <!-- responsive -->
+     <link rel="stylesheet" href="./css/responsive/layout_responsive.css">
+     <!-- swiper slide -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -18,7 +21,7 @@
         <!-- 로고 -->
         <div class="head_con">
           <h1>
-            <a href="/">
+            <a href="./index.html">
               <img src="./img/icons/logo.svg" alt="Compare logo" />
             </a>
           </h1>
@@ -69,21 +72,43 @@
           </nav>
           <!-- 아이콘 -->
           <div class="icon_wrap">
+            <div class="icons">
             <a href="#">
               <img src="./img/icons/search.svg" alt="검색" />
             </a>
+          </div>
+          <div class="icons">
             <a href="#">
               <img src="./img/icons/chat.svg" alt="채팅 및 알림" />
             </a>
+          </div>
+          <div class="icons">
             <a href="#">
               <img src="./img/icons/user_info.svg" alt="회원정보메뉴" />
             </a>
+          </div>    
+          <div class="all_menu_btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <div class="all_menu">
+          <a href="#">HOME</a>
+          <a href="#">PACKAGE</a>
+          <a href="#">STYLEGUIDE</a>
+          <a href="#">DESIGNER</a>
+          <a href="#">COMUNITY</a>
+          <a href="#">SERVICE</a>
+        </div>
           </div>
+          
         </div>
       </header>
       <main>
         <!-- 플러팅 버튼 -->
         <div class="floating_wrap">
+          <div class="floating_con">
           <div class="floating_btn">
             <a href="#sec1">
               <p>소통</p>
@@ -108,6 +133,7 @@
               <img src="./img/common/Empty Battery.svg" alt="버튼" />
             </a>
           </div>
+        </div>
         </div>
         <!-- 메인 배너 -->
         <section class="main_banner">
@@ -581,6 +607,7 @@
       </footer>
       <!-- js -->
       <script src="./js/main_slide.js"></script>
+      <script src="./js/all_menu.js"></script>
     </div>
   </body>
 </html>

@@ -34,7 +34,7 @@ body {
 
 .container {
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -50,22 +50,30 @@ main {
 }
 .floating_wrap {
   width: 80px;
+  padding: 0 20px;
   height: auto;
   position: fixed;
   z-index: 999;
   right: 30px;
-  bottom: 100px;
+  bottom: 150px;
+}
+.floating_con {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  perspective: 1000px;
 }
 .floating_btn {
   width: 80px;
   height: 80px;
   background-color: var(--pointcolor);
   border-radius: 40px;
-
   margin-bottom: 30px;
   position: relative;
   opacity: 0.6;
-  transition: 0.5s;
+  transition: transform 0.5s;
+  position: absolute;
+  transform-style: preserve-3d;
 }
 .floating_btn > a {
   width: 100%;
@@ -95,8 +103,21 @@ main {
   background-color: #fff;
   border-radius: 20px;
 }
-.floating_btn:hover {
+.floating_wrap:hover .floating_btn:nth-child(1) {
   opacity: 1;
+  transform: translateY(-350px);
+}
+.floating_wrap:hover .floating_btn:nth-child(2) {
+  opacity: 1;
+  transform: translateY(-250px);
+}
+.floating_wrap:hover .floating_btn:nth-child(3) {
+  opacity: 1;
+  transform: translateY(-150px);
+}
+.floating_wrap:hover .floating_btn:nth-child(4) {
+  opacity: 1;
+  transform: translateY(-50px);
 }
 .floating_btn:hover p {
   transform: translateY(-40px);
@@ -249,14 +270,76 @@ h1 > a {
   margin: 26px 0;
   gap: 8px;
 }
-.icon_wrap > a {
+.icon_wrap > .icons {
   width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
+  height: 100%;
   transition: 0.3s;
 }
-.icon_wrap > a:hover {
+.icon_wrap > .icons:last-child {
+  position: relative;
+}
+.icons > a {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.icon_wrap > .icons:hover {
   transform: scale(1.2);
+}
+/* 헤더 반응형 전체 메뉴 */
+.all_menu_btn {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+.bar {
+  width: 100%;
+  height: 2px;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: 0.3s;
+}
+.all_menu_btn.active .bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.all_menu_btn.active .bar:nth-child(2) {
+  opacity: 0; /* 가운데 바 숨김 */
+}
+
+.all_menu_btn.active .bar:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+}
+.all_menu {
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  right: 0;
+  top: 100px;
+  transform: translateX(250px);
+  transition: right 0.3s ease;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.all_menu > a {
+  padding: 15px;
+  transition: 0.3s;
+  font-size: var(--sm-font-size);
+  font-weight: 600;
+  line-height: 1.7;
+}
+.all_menu:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.all_menu.open {
+  transform: translateX(0);
 }
 /* 푸터 */
 footer {

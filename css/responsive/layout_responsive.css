@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* 모바일 */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  header > .head_con {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* logo */
+  h1 {
+    width: 120px;
+    height: fit-content;
+    margin: 22px 0;
+  }
+  #gnb {
+    display: none;
+  }
+  .icon_wrap {
+    gap: 5;
+    align-items: center;
+  }
+  .icon_wrap > .icons {
+    width: 48px;
+    height: 48px;
+  }
+  .icon_wrap > .icons:hover {
+    transform: none;
+  }
+  .icons:not(.icons:nth-child(3)) {
+    display: none;
+  }
+  .all_menu_btn {
+    display: flex;
+    width: 20px;
+    height: 20px;
+  }
+  .all_menu {
+    width: 150px;
+    top: 60px;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.9);
+  }
+  .all_menu > a {
+    font-size: var(--xxs-font-size);
+    line-height: 1.2;
+  }
+  /* 플러팅 버튼 */
+  .floating_wrap {
+    display: none;
+  }
+}
+/* 태블릿 */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+/* 작은 노트북 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/*큰 노트북 */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+}
+/* 데스크탑 */
+@media screen and (min-width: 1441px) {
+}

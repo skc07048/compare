@@ -21,6 +21,7 @@ const swiperMain = new Swiper(".main-con", {
     clickable: true,
   },
 });
+
 // 메인 페이지 포트폴리오 슬라이더
 const swiperPort = new Swiper(".port-con", {
   slidesPerView: "auto",
