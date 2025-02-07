@@ -1,1 +1,27 @@
-@u;
+/* 모바일 */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  h2:not(.main_title) {
+    width: fit-content;
+    height: fit-content;
+    font-size: var(--sm-font-size);
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 60px;
+  }
+  h2:not(.main_title):after {
+    display: none;
+  }
+}
+/* 태블릿 */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+/* 작은 노트북 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/*큰 노트북 */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+}
+/* 데스크탑 */
+@media screen and (min-width: 1441px) {
+}

@@ -20,6 +20,46 @@ const swiperMain = new Swiper(".main-con", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  // 반응형 포인트
+  breakpoints: {
+    319: {
+      effect: "none",
+      spaceBetween: 20,
+      slidesPerView: "1",
+      pagination: false,
+      autoplay: false,
+    },
+
+    481: {
+      slidesPerView: "1",
+      effect: "none",
+      slidesPerView: "1",
+      pagination: false,
+      autoplay: false,
+    },
+
+    769: {
+      slidesPerView: "3",
+      effect: "none",
+      pagination: false,
+      spaceBetween: 20,
+      autoplay: false,
+    },
+
+    1025: {
+      slidesPerView: "auto",
+      effect: "coverflow",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      spaceBetween: 20,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+    },
+  },
 });
 
 // 메인 페이지 포트폴리오 슬라이더
