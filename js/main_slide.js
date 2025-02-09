@@ -1,9 +1,9 @@
 //메인 페이지 메인 슬라이더
-const swiperMain = new Swiper(".main-con", {
-  effect: "coverflow",
+const swiperMain = new Swiper('.main-con', {
+  effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: "auto",
+  slidesPerView: 'auto',
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
@@ -17,40 +17,38 @@ const swiperMain = new Swiper(".main-con", {
   },
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
-  // 반응형 포인트
+  // 반응형 브레이크 포인트
   breakpoints: {
     319: {
-      effect: "none",
       spaceBetween: 20,
-      slidesPerView: "1",
       pagination: false,
       autoplay: false,
     },
 
     481: {
-      slidesPerView: "1",
-      effect: "none",
-      slidesPerView: "1",
+      slidesPerView: '1',
+      effect: 'none',
+      slidesPerView: '1',
       pagination: false,
       autoplay: false,
     },
 
     769: {
-      slidesPerView: "3",
-      effect: "none",
+      slidesPerView: '3',
+      effect: 'none',
       pagination: false,
       spaceBetween: 20,
       autoplay: false,
     },
 
     1025: {
-      slidesPerView: "auto",
-      effect: "coverflow",
+      slidesPerView: 'auto',
+      effect: 'coverflow',
       pagination: {
-        el: ".swiper-pagination",
+        el: '.swiper-pagination',
         clickable: true,
       },
       spaceBetween: 20,
@@ -63,41 +61,49 @@ const swiperMain = new Swiper(".main-con", {
 });
 
 // 메인 페이지 포트폴리오 슬라이더
-const swiperPort = new Swiper(".port-con", {
-  slidesPerView: "auto",
-  spaceBetween: 20,
+const swiperPort = new Swiper('.port-con', {
+  effect: 'cards',
   centeredSlides: true,
-  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 20,
   autoplay: {
-    delay: 4500,
+    delay: 4000,
     disableOnInteraction: false,
   },
+  loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
-});
-//메인 페이지 포트폴리오 슬라이더 클래스 추가
-const swiperSlide = new Swiper(".port-con", {
-  on: {
-    slideChange: function () {
-      this.slides.forEach((slide) => slide.classList.remove("custom-active"));
-      this.slides[this.activeIndex].classList.add("custom-active");
+  // 반응형 브레이크 포인트
+  breakpoints: {
+    320: {
+      spaceBetween: 20,
+      pagination: false,
+      autoplay: false,
     },
   },
 });
-const swiperWrapper = new Swiper(".port-con", {
+//메인 페이지 포트폴리오 슬라이더 클래스 추가
+const swiperSlide = new Swiper('.port-con', {
+  on: {
+    slideChange: function () {
+      this.slides[this.activeIndex].classList.add('custom-active');
+    },
+  },
+});
+const swiperWrapper = new Swiper('.port-con', {
   on: {
     init: function () {
-      this.wrapperEl.classList.add("custom-wrapper");
+      this.wrapperEl.classList.add('custom-wrapper');
     },
   },
 });
 //메인 페이지 스타일가이드 슬라이더
-const swiperStyle = new Swiper(".style-con", {
-  effect: "coverflow",
+const swiperStyle = new Swiper('.style-con', {
+  effect: 'coverflow',
   centeredSlides: true,
-  slidesPerView: "auto",
+  slidesPerView: 'auto',
   spaceBetween: 50,
   loop: true,
   autoplay: {
@@ -112,21 +118,21 @@ const swiperStyle = new Swiper(".style-con", {
     slideShadows: false,
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
 });
-const swiperStyleSlide = new Swiper(".style-con", {
+const swiperStyleSlide = new Swiper('.style-con', {
   on: {
     slideChange: function () {
-      this.slides[this.activeIndex].classList.add("style-card");
+      this.slides[this.activeIndex].classList.add('style-card');
     },
   },
 });
-const swiperStyleWrapper = new Swiper(".style-con", {
+const swiperStyleWrapper = new Swiper('.style-con', {
   on: {
     init: function () {
-      this.wrapperEl.classList.add("style-wrapper");
+      this.wrapperEl.classList.add('style-wrapper');
     },
   },
 });

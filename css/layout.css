@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import url("./reset.css");
-@import url("./common.css");
+@import url('./reset.css');
+@import url('./common.css');
 
 /* 메인 배너 */
 .main_banner {
@@ -19,7 +19,7 @@
 }
 
 .main_wrap > .main_title {
-  font-family: "JalnanGothic", sans-serif;
+  font-family: 'JalnanGothic', sans-serif;
   font-size: var(--xl-font-size);
   line-height: var(--xl-line-height);
   opacity: 0;
@@ -62,22 +62,19 @@
   gap: 40px;
   z-index: 99;
 }
-.swiper-slide:not(.style-card) {
+.swiper-slide:not(.style-card, .custom-active) {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
   box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
   position: relative;
   background-position: center;
   background-size: cover;
-  max-width: fit-content;
-  max-height: fit-content;
+  max-width: 500px;
+  max-height: 500px;
 }
-.slide_wrap {
-  width: 500px;
-  height: 500px;
-}
+
 /* 메인 비쥬얼 버튼 */
-.slide_wrap > .more {
+.swiper-slide > .more {
   width: 40px;
   height: 40px;
   padding: 8px;
@@ -90,11 +87,11 @@
   opacity: 0;
   transition: 1s;
 }
-.slide_wrap > .more > a {
+.swiper-slide > .more > a {
   width: 100%;
   height: 100%;
 }
-.slide_wrap > .more > a > img {
+.swiper-slide > .more > a > img {
   width: 100%;
   height: 100%;
   display: flex;
@@ -300,7 +297,7 @@
   width: 420px;
 }
 .chat_box:first-of-type > div:nth-child(1) > p:nth-child(2)::after {
-  content: "picture";
+  content: 'picture';
   font-size: 0;
   display: block;
   width: 26px;
@@ -312,7 +309,7 @@
   top: 25px;
 }
 .chat_box:nth-of-type(2) > div:nth-child(1) > p:nth-child(1)::after {
-  content: "arrow";
+  content: 'arrow';
   font-size: 0;
   display: block;
   width: 26px;
@@ -324,7 +321,7 @@
   top: 25px;
 }
 .chat_box:nth-of-type(3) > div:nth-child(1) > p:nth-child(1)::after {
-  content: "symbol";
+  content: 'symbol';
   font-size: 0;
   display: block;
   width: 26px;
@@ -364,9 +361,8 @@
   margin: 0;
 }
 .custom-wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
+  max-width: 100%;
+  max-height: 100%;
 }
 /* 이미지 영역 공통속성*/
 .custom-active {
@@ -375,11 +371,15 @@
   overflow: hidden;
   border-radius: 30px;
 }
-.custom-active > a {
+.port_image {
   width: 100%;
   height: 100%;
 }
-.custom-active > a > img {
+.port_image > a {
+  width: 100%;
+  height: 100%;
+}
+.port_image > a > img {
   transition: 0.3s;
   object-fit: cover;
   width: 100%;
@@ -387,7 +387,7 @@
   filter: grayscale(1);
   will-change: transform filter;
 }
-.custom-active:hover > a > img {
+.port_image:hover > a > img {
   transform: scale(1.05);
   filter: grayscale(0);
 }

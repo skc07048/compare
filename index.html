@@ -7,13 +7,16 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/layout.css" />
     <!-- responsive -->
-     <link rel="stylesheet" href="./css/responsive/layout_responsive.css">
-     <!-- swiper slide -->
+    <link rel="stylesheet" href="./css/responsive/layout_responsive.css" />
+    <!-- swiper slide -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <div class="container">
@@ -73,67 +76,66 @@
           <!-- 아이콘 -->
           <div class="icon_wrap">
             <div class="icons">
-            <a href="#">
-              <img src="./img/icons/search.svg" alt="검색" />
-            </a>
+              <a href="#">
+                <img src="./img/icons/search.svg" alt="검색" />
+              </a>
+            </div>
+            <div class="icons">
+              <a href="#">
+                <img src="./img/icons/chat.svg" alt="채팅 및 알림" />
+              </a>
+            </div>
+            <div class="icons">
+              <a href="#">
+                <img src="./img/icons/user_info.svg" alt="회원정보메뉴" />
+              </a>
+            </div>
+            <div class="all_menu_btn">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+
+            <div class="all_menu">
+              <a href="#">HOME</a>,,,
+              <a href="#">PACKAGE</a>
+              <a href="#">STYLEGUIDE</a>
+              <a href="#">DESIGNER</a>
+              <a href="#">COMUNITY</a>
+              <a href="#">SERVICE</a>
+            </div>
           </div>
-          <div class="icons">
-            <a href="#">
-              <img src="./img/icons/chat.svg" alt="채팅 및 알림" />
-            </a>
-          </div>
-          <div class="icons">
-            <a href="#">
-              <img src="./img/icons/user_info.svg" alt="회원정보메뉴" />
-            </a>
-          </div>    
-          <div class="all_menu_btn">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        
-        <div class="all_menu">
-          <a href="#">HOME</a>
-          <a href="#">PACKAGE</a>
-          <a href="#">STYLEGUIDE</a>
-          <a href="#">DESIGNER</a>
-          <a href="#">COMUNITY</a>
-          <a href="#">SERVICE</a>
-        </div>
-          </div>
-          
         </div>
       </header>
       <main>
         <!-- 플러팅 버튼 -->
         <div class="floating_wrap">
           <div class="floating_con">
-          <div class="floating_btn">
-            <a href="#sec1">
-              <p>소통</p>
-              <img src="./img/common/Full Battery.svg" alt="버튼" />
-            </a>
+            <div class="floating_btn">
+              <a href="#sec1">
+                <p>소통</p>
+                <img src="./img/common/Full Battery.svg" alt="버튼" />
+              </a>
+            </div>
+            <div class="floating_btn">
+              <a href="#sec2">
+                <p>포트폴리오</p>
+                <img src="./img/common/Charged Battery.svg" alt="버튼" />
+              </a>
+            </div>
+            <div class="floating_btn">
+              <a href="#sec3">
+                <p>코디가이드</p>
+                <img src="./img/common/Battery Level.svg" alt="버튼" />
+              </a>
+            </div>
+            <div class="floating_btn">
+              <a href="#sec4">
+                <p>리뷰 및<br />이용가이드</p>
+                <img src="./img/common/Empty Battery.svg" alt="버튼" />
+              </a>
+            </div>
           </div>
-          <div class="floating_btn">
-            <a href="#sec2">
-              <p>포트폴리오</p>
-              <img src="./img/common/Charged Battery.svg" alt="버튼" />
-            </a>
-          </div>
-          <div class="floating_btn">
-            <a href="#sec3">
-              <p>코디가이드</p>
-              <img src="./img/common/Battery Level.svg" alt="버튼" />
-            </a>
-          </div>
-          <div class="floating_btn">
-            <a href="#sec4">
-              <p>리뷰 및<br />이용가이드</p>
-              <img src="./img/common/Empty Battery.svg" alt="버튼" />
-            </a>
-          </div>
-        </div>
         </div>
         <!-- 메인 배너 -->
         <section class="main_banner">
@@ -143,90 +145,96 @@
               소통하는 공간
             </h2>
             <div class="swiper main-con">
-              <div class="swiper-wrapper ">               
-                <div class="swiper-slide ">
-                  <div class="slide_wrap">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
                   <div class="slide_image">
-                  <a href="#">
-                    <img src="./img/main/main_img/main-img1.jpg" alt="메인이미지1" />
-                  </a>
-                </div>
+                    <a href="#">
+                      <img
+                        src="./img/main/main_img/main-img1.jpg"
+                        alt="메인이미지1"
+                      />
+                    </a>
+                  </div>
                   <div class="more">
                     <a href="#">
                       <img src="./img/common/plus.svg" alt="플러스 버튼" />
                     </a>
                   </div>
                 </div>
-                </div>
-                <div class="swiper-slide ">
-                  <div class="slide_wrap">
+                <div class="swiper-slide">
                   <div class="slide_image">
-                  <a href="#">
-                    <img src="./img/main/main_img/main-img2.jpg" alt="메인이미지2" />
-                  </a>
-                </div>
+                    <a href="#">
+                      <img
+                        src="./img/main/main_img/main-img2.jpg"
+                        alt="메인이미지2"
+                      />
+                    </a>
+                  </div>
                   <div class="more">
                     <a href="#">
                       <img src="./img/common/plus.svg" alt="플러스 버튼" />
                     </a>
                   </div>
                 </div>
-                </div>
-                <div class="swiper-slide ">
-                  <div class="slide_wrap">
+                <div class="swiper-slide">
                   <div class="slide_image">
-                  <a href="#">
-                    <img src="./img/main/main_img/main-img3.jpg" alt="메인이미지3" />
-                  </a>
-                </div>
+                    <a href="#">
+                      <img
+                        src="./img/main/main_img/main-img3.jpg"
+                        alt="메인이미지3"
+                      />
+                    </a>
+                  </div>
                   <div class="more">
                     <a href="#">
                       <img src="./img/common/plus.svg" alt="플러스 버튼" />
                     </a>
                   </div>
                 </div>
-                </div>
-                <div class="swiper-slide ">
-                  <div class="slide_wrap">
+                <div class="swiper-slide">
                   <div class="slide_image">
-                  <a href="#">
-                    <img src="./img/main/main_img/main-img3.jpg" alt="메인이미지3" />
-                  </a>
-                </div>
+                    <a href="#">
+                      <img
+                        src="./img/main/main_img/main-img3.jpg"
+                        alt="메인이미지3"
+                      />
+                    </a>
+                  </div>
                   <div class="more">
                     <a href="#">
                       <img src="./img/common/plus.svg" alt="플러스 버튼" />
                     </a>
                   </div>
                 </div>
-                </div>
-                <div class="swiper-slide ">
-                  <div class="slide_wrap">
+                <div class="swiper-slide">
                   <div class="slide_image">
-                  <a href="#">
-                    <img src="./img/main/main_img/main-img3.jpg" alt="메인이미지3" />
-                  </a>
-                </div>
+                    <a href="#">
+                      <img
+                        src="./img/main/main_img/main-img3.jpg"
+                        alt="메인이미지3"
+                      />
+                    </a>
+                  </div>
                   <div class="more">
                     <a href="#">
                       <img src="./img/common/plus.svg" alt="플러스 버튼" />
                     </a>
                   </div>
                 </div>
-                </div>
-                <div class="swiper-slide ">
-                  <div class="slide_wrap">
+                <div class="swiper-slide">
                   <div class="slide_image">
-                  <a href="#">
-                    <img src="./img/main/main_img/main-img3.jpg" alt="메인이미지3" />
-                  </a>
-                </div>
+                    <a href="#">
+                      <img
+                        src="./img/main/main_img/main-img3.jpg"
+                        alt="메인이미지3"
+                      />
+                    </a>
+                  </div>
                   <div class="more">
                     <a href="#">
                       <img src="./img/common/plus.svg" alt="플러스 버튼" />
                     </a>
                   </div>
-                </div>
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -234,7 +242,8 @@
             <h2 class="main_title">
               모든 개성과 감각이<br />
               어우러지는 패션 서비스
-            </h2>         
+            </h2>
+          </div>
         </section>
         <!-- sec1 -->
         <section id="sec1">
@@ -266,36 +275,36 @@
                   <img src="./img/main/main_sec1/phone.png" alt="phone" />
                   <!-- 챗팅 영역역 -->
                   <div class="chat_box">
-                    <div>
+                    <div data-aos="fade-right" data-aos-duration="1000">
                       <p>아침에는 이런 스타일 어때요?</p>
                       <p>사진보기</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-left" data-aos-duration="1200">
                       <p>나쁘지 않은 것 같아요!</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-right" data-aos-duration="1400">
                       <p>옷 정보를 공유해드릴게요.</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-left" data-aos-duration="1600">
                       <img src="./img/icons/smile_icon.svg" alt="smile icon" />
                     </div>
                   </div>
                   <div class="chat_box">
-                    <div>
+                    <div data-aos="fade-right" data-aos-duration="1000">
                       <p>원하시는 스타일 시안 필요하시면 말씀해주세요! 링크</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-left" data-aos-duration="1200">
                       <p>스트릿 스타일 부탁드려요.</p>
                     </div>
                   </div>
                   <div class="chat_box">
-                    <div>
+                    <div data-aos="fade-right" data-aos-duration="1000">
                       <p>많은 스타일 궁금한게 있으면 Compare에서</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-left" data-aos-duration="1200">
                       <p>언제 어디서나 편하게</p>
                     </div>
-                    <div>
+                    <div data-aos="fade-right" data-aos-duration="1400">
                       <p>디자이너와 사용자를 위한 서비스!</p>
                     </div>
                   </div>
@@ -312,58 +321,69 @@
             <div class="prt_con">
               <!-- 왼쪽 영역 -->
               <div class="swiper port-con">
-                <div class="swiper-wrapper ">
+                <div class="swiper-wrapper custom-wrapper">
                   <div class="swiper-slide custom-active">
-                <a href="#">
-                  <img
-                    src="./img/main/main_sec2/prt_image1.jpg"
-                    alt="이미지1"
-                  />
-                </a>
-                </div>
+                    <div class="port_image">
+                      <a href="#">
+                        <img
+                          src="./img/main/main_sec2/prt_image1.jpg"
+                          alt="이미지1"
+                        />
+                      </a>
+                    </div>
+                  </div>
                   <div class="swiper-slide custom-active">
-                <a href="#">
-                  <img
-                    src="./img/main/main_sec2/prt_image1.jpg"
-                    alt="이미지1"
-                  />
-                </a>
-                </div>
+                    <div class="port_image">
+                      <a href="#">
+                        <img
+                          src="./img/main/main_sec2/prt_image1.jpg"
+                          alt="이미지1"
+                        />
+                      </a>
+                    </div>
+                  </div>
                   <div class="swiper-slide custom-active">
-                <a href="#">
-                  <img
-                    src="./img/main/main_sec2/prt_image1.jpg"
-                    alt="이미지1"
-                  />
-                </a>
+                    <div class="port_image">
+                      <a href="#">
+                        <img
+                          src="./img/main/main_sec2/prt_image1.jpg"
+                          alt="이미지1"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide custom-active">
+                    <div class="port_image">
+                      <a href="#">
+                        <img
+                          src="./img/main/main_sec2/prt_image2.jpg"
+                          alt="이미지2"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide custom-active">
+                    <div class="port_image">
+                      <a href="#">
+                        <img
+                          src="./img/main/main_sec2/prt_image3.jpg"
+                          alt="이미지3"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide custom-active">
+                    <div class="port_image">
+                      <a href="#">
+                        <img
+                          src="./img/main/main_sec2/prt_image4.jpg"
+                          alt="이미지4"
+                        />
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="swiper-slide custom-active">
-                <a href="#">
-                  <img
-                    src="./img/main/main_sec2/prt_image2.jpg"
-                    alt="이미지2"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide custom-active">
-                <a href="#">
-                  <img
-                    src="./img/main/main_sec2/prt_image3.jpg"
-                    alt="이미지3"
-                  />
-                </a>
-              </div>
-              <div class="swiper-slide custom-active">
-                <a href="#">
-                  <img
-                    src="./img/main/main_sec2/prt_image4.jpg"
-                    alt="이미지4"
-                  />
-                </a>
-              </div>
-              </div>
-              <div class="swiper-pagination "></div>
-
+                <div class="swiper-pagination"></div>
               </div>
               <!-- 오른쪽 영역 -->
               <div class="prt_right">
@@ -384,88 +404,105 @@
           <!-- 스타일 가이드 컨텐츠 -->
           <div class="style_wrap">
             <!-- 타이틀 -->
-             <div class="title">
-            <h2>패션 디자이너가 추천하는 코디가이드</h2>
-          </div>
+            <div class="title">
+              <h2>패션 디자이너가 추천하는 코디가이드</h2>
+            </div>
             <!-- 컨텐츠 이미지 영역 -->
             <div class="swiper style-con">
               <div class="swiper-wrapper style-wrapper">
-              <div class="swiper-slide style-card">
-                <div class="style_card_inner">
-              <div class="style_card_front">                
-                  <img src="./img/main/main_sec3/sec3-1.jpg" alt="sec3_img1" />
+                <div class="swiper-slide style-card">
+                  <div class="style_card_inner">
+                    <div class="style_card_front">
+                      <img
+                        src="./img/main/main_sec3/sec3-1.jpg"
+                        alt="sec3_img1"
+                      />
+                    </div>
+                    <div class="style_card_back">
+                      <a href="#">
+                        <p>스타일 소개</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide style-card">
+                  <div class="style_card_inner">
+                    <div class="style_card_front">
+                      <img
+                        src="./img/main/main_sec3/sec3-2.jpg"
+                        alt="sec3_img1"
+                      />
+                    </div>
+                    <div class="style_card_back">
+                      <a href="#">
+                        <p>스타일 소개</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide style-card">
+                  <div class="style_card_inner">
+                    <div class="style_card_front">
+                      <img
+                        src="./img/main/main_sec3/sec3-3.jpg"
+                        alt="sec3_img1"
+                      />
+                    </div>
+                    <div class="style_card_back">
+                      <a href="#">
+                        <p>스타일 소개</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide style-card">
+                  <div class="style_card_inner">
+                    <div class="style_card_front">
+                      <img
+                        src="./img/main/main_sec3/sec3-4.jpg"
+                        alt="sec3_img1"
+                      />
+                    </div>
+                    <div class="style_card_back">
+                      <a href="#">
+                        <p>스타일 소개</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide style-card">
+                  <div class="style_card_inner">
+                    <div class="style_card_front">
+                      <img
+                        src="./img/main/main_sec3/sec3-5.jpg"
+                        alt="sec3_img1"
+                      />
+                    </div>
+                    <div class="style_card_back">
+                      <a href="#">
+                        <p>스타일 소개</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide style-card">
+                  <div class="style_card_inner">
+                    <div class="style_card_front">
+                      <img
+                        src="./img/main/main_sec3/sec3-6.jpg"
+                        alt="sec3_img1"
+                      />
+                    </div>
+                    <div class="style_card_back">
+                      <a href="#">
+                        <p>스타일 소개</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="style_card_back">
-                <a href="#">
-                <p>스타일 소개</p>
-              </a>
-              </div>
+              <div class="swiper-pagination"></div>
             </div>
-            </div>
-              <div class="swiper-slide style-card">
-                <div class="style_card_inner">
-              <div class="style_card_front">                
-                  <img src="./img/main/main_sec3/sec3-2.jpg" alt="sec3_img1" />
-              </div>
-              <div class="style_card_back">
-                <a href="#">
-                <p>스타일 소개</p>
-              </a>
-              </div>
-            </div>
-            </div>
-              <div class="swiper-slide style-card">
-                <div class="style_card_inner">
-              <div class="style_card_front">                
-                  <img src="./img/main/main_sec3/sec3-3.jpg" alt="sec3_img1" />
-              </div>
-              <div class="style_card_back">
-                <a href="#">
-                <p>스타일 소개</p>
-              </a>
-              </div>
-            </div>
-            </div>
-              <div class="swiper-slide style-card">
-                <div class="style_card_inner">
-              <div class="style_card_front">                
-                  <img src="./img/main/main_sec3/sec3-4.jpg" alt="sec3_img1" />
-              </div>
-              <div class="style_card_back">
-                <a href="#">
-                <p>스타일 소개</p>
-              </a>
-              </div>
-            </div>
-            </div>
-              <div class="swiper-slide style-card">
-                <div class="style_card_inner">
-              <div class="style_card_front">                
-                  <img src="./img/main/main_sec3/sec3-5.jpg" alt="sec3_img1" />
-              </div>
-              <div class="style_card_back">
-                <a href="#">
-                <p>스타일 소개</p>
-              </a>
-              </div>
-            </div>
-            </div>
-              <div class="swiper-slide style-card">
-                <div class="style_card_inner">
-              <div class="style_card_front">                
-                  <img src="./img/main/main_sec3/sec3-6.jpg" alt="sec3_img1" />
-              </div>
-              <div class="style_card_back">
-                <a href="#">
-                <p>스타일 소개</p>
-              </a>
-              </div>
-            </div>
-            </div>                   
-            </div>
-      <div class="swiper-pagination"></div>
-
-          </div>
           </div>
         </section>
         <!-- sec4 -->
@@ -632,6 +669,9 @@
       <!-- js -->
       <script src="./js/main_slide.js"></script>
       <script src="./js/all_menu.js"></script>
+      <script>
+        AOS.init();
+      </script>
     </div>
   </body>
 </html>
