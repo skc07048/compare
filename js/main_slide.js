@@ -1,9 +1,9 @@
 //메인 페이지 메인 슬라이더
-const swiperMain = new Swiper(".main-con", {
-  effect: "coverflow",
+const swiperMain = new Swiper('.main-con', {
+  effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: "auto",
+  slidesPerView: 'auto',
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
@@ -17,7 +17,7 @@ const swiperMain = new Swiper(".main-con", {
   },
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
   // 반응형 브레이크 포인트
@@ -28,38 +28,26 @@ const swiperMain = new Swiper(".main-con", {
     },
 
     481: {
-      slidesPerView: "1",
-      effect: "none",
-      slidesPerView: "1",
+      spaceBetween: 40,
       pagination: false,
-      autoplay: false,
     },
 
     769: {
-      slidesPerView: "3",
-      effect: "none",
+      spaceBetween: 60,
       pagination: false,
-      spaceBetween: 20,
-      autoplay: false,
     },
 
     1025: {
-      slidesPerView: "auto",
-      effect: "coverflow",
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      spaceBetween: 20,
+      spaceBetween: 60,
     },
   },
 });
 
 // 메인 페이지 포트폴리오 슬라이더
-const swiperPort = new Swiper(".port-con", {
-  effect: "coverflow",
+const swiperPort = new Swiper('.port-con', {
+  effect: 'coverflow',
   centeredSlides: true,
-  slidesPerView: "auto",
+  slidesPerView: 'auto',
   spaceBetween: 40,
   coverflowEffect: {
     rotate: 20,
@@ -74,25 +62,37 @@ const swiperPort = new Swiper(".port-con", {
   },
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
   // 반응형 브레이크 포인트
   breakpoints: {
     320: {
-      slidesPerView: "auto",
-      spaceBetween: 50,
+      spaceBetween: 20,
       pagination: false,
     },
-    1024: {},
+
+    481: {
+      spaceBetween: 60,
+      pagination: false,
+    },
+
+    769: {
+      spaceBetween: 60,
+      pagination: false,
+    },
+
+    1025: {
+      spaceBetween: 60,
+    },
   },
 });
 
 //메인 페이지 스타일가이드 슬라이더
-const swiperStyle = new Swiper(".style-con", {
-  effect: "coverflow",
+const swiperStyle = new Swiper('.style-con', {
+  effect: 'coverflow',
   centeredSlides: true,
-  slidesPerView: "auto",
+  slidesPerView: 'auto',
   spaceBetween: 50,
   loop: true,
   autoplay: {
@@ -107,15 +107,27 @@ const swiperStyle = new Swiper(".style-con", {
     slideShadows: false,
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
   breakpoints: {
     320: {
-      effect: "coverflow",
-      slidesPerView: "auto",
-      spaceBetween: 50,
+      spaceBetween: 20,
       pagination: false,
+    },
+
+    481: {
+      spaceBetween: 60,
+      pagination: false,
+    },
+
+    769: {
+      spaceBetween: 60,
+      pagination: false,
+    },
+
+    1025: {
+      spaceBetween: 60,
     },
   },
 });
