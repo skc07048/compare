@@ -291,6 +291,17 @@
 
 /* 작은 노트북 */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 타이틀 */
+  h2:not(.main_title) {
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 600;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  h2:not(.main_title):after {
+    display: block;
+  }
   /* 헤더 */
   header {
     background-color: rgba(0, 0, 0, 0.1);

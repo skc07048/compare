@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('./common_responsive.css');
+@import url("./common_responsive.css");
 /* 모바일 */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   /* 헤더 */
@@ -100,7 +100,7 @@
   }
   /* 메인 타이틀 텍스트 */
   .main_wrap > .main_title {
-    font-family: 'JalnanGothic', sans-serif;
+    font-family: "JalnanGothic", sans-serif;
     font-size: clamp(18px, 6vw, 24px);
     line-height: 1.2;
     opacity: 1;
@@ -706,7 +706,7 @@
   }
   /* 메인 타이틀 텍스트 */
   .main_wrap > .main_title {
-    font-family: 'JalnanGothic', sans-serif;
+    font-family: "JalnanGothic", sans-serif;
     font-size: clamp(28px, 5vw, 38px);
     line-height: 1.2;
     opacity: 1;
@@ -1315,7 +1315,7 @@
     padding: 30px 0;
   }
   .main_wrap > .main_title {
-    font-family: 'JalnanGothic', sans-serif;
+    font-family: "JalnanGothic", sans-serif;
     font-size: var(--md-font-size);
     line-height: var(--md-line-height);
     opacity: 0;
@@ -1341,9 +1341,7 @@
     max-width: 60vw;
     max-height: 60vw;
   }
-  .swiper-slide > .more {
-    display: none;
-  }
+
   .slide_image {
     width: 100%;
     height: 100%;
@@ -1358,8 +1356,315 @@
     object-fit: cover;
     transition: 0.8s;
   }
-  .swiper-slide:hover:not(.custom_card, .style-card) img {
-    border-radius: 0px;
+  /* sec1 */
+  #sec1 {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    padding-top: 180px;
+    position: relative;
+  }
+  #sec1 > h2 {
+    font-size: clamp(22px, 3vw, 30px);
+    font-weight: 600;
+    position: relative;
+    margin-left: 14px;
+    margin-bottom: 24px;
+  }
+  .bg_left {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    left: -150px;
+    bottom: -70px;
+    animation: bg_img 15s linear 0s infinite;
+    display: none;
+  }
+  .chat_wrap {
+    width: 100%;
+    height: auto;
+  }
+  .chat_con {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 18px;
+  }
+  /* sec1 왼쪽 영역 */
+  .chat_left {
+    width: 45%;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+    border-radius: 0 30px 30px 0;
+    padding: 0 14px;
+    box-sizing: border-box;
+  }
+  .chat_left h3 {
+    color: #f9f9f9;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.2;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 3px;
+  }
+  .chat_left p:nth-child(2) {
+    color: #d9d9d9;
+    font-size: clamp(17px, 2.2vw, 24px);
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 28px;
+  }
+  .chat_left p:nth-child(3) {
+    color: #999;
+    font-size: clamp(10px, 2vw, 16px);
+    font-weight: 300;
+    line-height: 22px;
+    border-bottom: 1px solid #777;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+  }
+  /* 버튼 영역 */
+  .chat_btn {
+    width: 85%;
+    height: fit-content;
+    color: #fff;
+    text-align: center;
+    line-height: auto;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  /* sec1 오른쪽 영역 */
+  .chat_right {
+    width: 60%;
+    height: 0;
+    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
+    border-radius: 30px 0 0 30px;
+  }
+  /* 핸드폰 이미지 영역 */
+  .phone_con {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .phone_con > img {
+    width: 55%;
+    height: auto;
+    position: absolute;
+    top: -12vw;
+    left: 25%;
+  }
+  /* 채팅 박스 영역 */
+  .chat_box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px 0 rgba(136, 136, 136, 0.2);
+    border-radius: 30px;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  /* 채팅 박스 순서 */
+  .chat_box:nth-of-type(1) {
+    width: 80%;
+    height: fit-content;
+    transform: translateY(-25%);
+    float: left;
+  }
+  .chat_box:nth-of-type(2) {
+    width: 80%;
+    height: fit-content;
+    float: right;
+    transform: translateY(-20%);
+  }
+  .chat_box:nth-of-type(3) {
+    display: none;
+  }
+  /* 채팅 말풍선 영역 */
+
+  .chat_box > div {
+    line-height: clamp(30px, 10vw, 50px);
+    margin-bottom: 6px;
+    position: relative;
+  }
+  .chat_box > div > p {
+    text-align: center;
+    font-size: clamp(10px, 3vw, 16px);
+    font-weight: 400;
+  }
+  .chat_box:nth-of-type(2) > div:first-child > p:nth-child(1) {
+    text-align: center;
+  }
+  .chat_box > div > p:nth-child(2) {
+    display: none;
+  }
+  .chat_box:nth-of-type(2) > div:nth-child(3) {
+    background-color: #007bff;
+    width: 90%;
+    border-radius: 20px 20px 20px 0;
+    display: block;
+  }
+  .chat_box > div:nth-child(1) {
+    background-color: #007bff;
+    border-radius: 20px 20px 20px 0;
+    text-align: left;
+    padding: 0;
+    width: 93%;
+    box-sizing: border-box;
+  }
+  .chat_box > div:nth-child(2) {
+    background-color: #fff;
+    color: #000;
+    width: 90%;
+    border-radius: 20px 20px 0 20px;
+    margin-left: auto;
+  }
+  .chat_box > div:nth-child(3) {
+    background-color: #007bff;
+    width: 90%;
+    border-radius: 20px 20px 20px 0;
+    margin: 0;
+  }
+  .chat_box > div:nth-child(4) {
+    display: none;
+  }
+  .chat_box:first-of-type > div:nth-child(1) > p:nth-child(2)::after {
+    display: none;
+  }
+  .chat_box:nth-of-type(2) > div:nth-child(1) > p:nth-child(1)::after {
+    display: none;
+  }
+  .chat_box:nth-of-type(3) > div:nth-child(1) > p:nth-child(1)::after {
+    display: none;
+  }
+  /* 섹션2 */
+  #sec2 {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    padding-top: 250px;
+    margin: 0 auto;
+    overflow: none;
+  }
+  .prt_wrap > h2 {
+    margin-right: 5%;
+    font-size: clamp(22px, 3vw, 30px);
+    margin-bottom: 20px;
+  }
+  .prt_con {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .port-con {
+    width: 55%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .custom_card {
+    max-width: 40vw;
+    max-height: 40vw;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto;
+  }
+  .port_image > a > img {
+    transition: 0.3s;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    will-change: transform filter;
+  }
+  .port_image {
+    width: 100%;
+    height: 100%;
+  }
+  .port_image:hover > a > img {
+    transform: scale(1.05);
+    filter: grayscale(0);
+  }
+  .prt_right {
+    width: 42%;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+    border-radius: 30px 0 0 30px;
+    padding: 0 24px;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  .prt_right > p:first-child {
+    color: #d9d9d9;
+    font-size: clamp(17px, 2.2vw, 24px);
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 3px;
+    margin-top: 50px;
+  }
+  .prt_right > p:nth-child(3) {
+    color: #999;
+    font-size: clamp(10px, 2vw, 16px);
+    font-weight: 300;
+    line-height: 22px;
+    border-bottom: 1px solid #777;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+  }
+  .prt_right > h3 {
+    color: #f9f9f9;
+    font-size: clamp(22px, 2.8vw, 28px);
+    line-height: 1.2;
+    font-weight: 600;
+    margin-top: 3px;
+    margin-bottom: 30px;
+  }
+  .prt_btn {
+    width: 85%;
+    height: fit-content;
+    margin-bottom: 30px;
+  }
+  .prt_btn > a {
+    background-color: #007bff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    line-height: auto;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+    border-radius: 10px;
+  } /* 섹션3 */
+  #sec3 {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    padding-top: 180px;
+  }
+  .style-con {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .style-card {
+    max-width: 50vw;
+    max-height: 60vw;
+    perspective: 1000px;
+  }
+
+  .style_card_front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: 50% 30%;
   }
 }
 
