@@ -78,7 +78,7 @@ const swiperPort = new Swiper('.port-con', {
     },
 
     769: {
-      spaceBetween: 80,
+      spaceBetween: 40,
       pagination: false,
     },
 
