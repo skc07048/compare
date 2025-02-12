@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url("./common_responsive.css");
+@import url('./common_responsive.css');
 /* 모바일 */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   /* 헤더 */
@@ -100,7 +100,7 @@
   }
   /* 메인 타이틀 텍스트 */
   .main_wrap > .main_title {
-    font-family: "JalnanGothic", sans-serif;
+    font-family: 'JalnanGothic', sans-serif;
     font-size: clamp(18px, 6vw, 24px);
     line-height: 1.2;
     opacity: 1;
@@ -706,7 +706,7 @@
   }
   /* 메인 타이틀 텍스트 */
   .main_wrap > .main_title {
-    font-family: "JalnanGothic", sans-serif;
+    font-family: 'JalnanGothic', sans-serif;
     font-size: clamp(28px, 5vw, 38px);
     line-height: 1.2;
     opacity: 1;
@@ -1298,6 +1298,69 @@
 }
 /* 작은 노트북 */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 메인 배너 */
+  .main_banner {
+    width: 100%;
+    height: auto;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    background-image: var(--background-gradient);
+  }
+  /* 메인 컨테츠 영역 */
+  .main_wrap {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    z-index: 0;
+    padding: 30px 0;
+  }
+  .main_wrap > .main_title {
+    font-family: 'JalnanGothic', sans-serif;
+    font-size: var(--md-font-size);
+    line-height: var(--md-line-height);
+    opacity: 0;
+    animation: text-left 1s ease-in-out 1s 1 forwards;
+  }
+  /* 메인 슬라이드 */
+  .swiper:not(.style-con, .port-con) {
+    max-width: 100vw;
+    max-height: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px auto;
+    gap: 10px;
+    z-index: 0;
+  }
+
+  .swiper-slide:not(.style-card, .custom_card) {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    max-width: 60vw;
+    max-height: 60vw;
+  }
+  .swiper-slide > .more {
+    display: none;
+  }
+  .slide_image {
+    width: 100%;
+    height: 100%;
+  }
+  .slide_image > a {
+    width: 100%;
+    height: 100%;
+  }
+  .slide_image > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.8s;
+  }
+  .swiper-slide:hover:not(.custom_card, .style-card) img {
+    border-radius: 0px;
+  }
 }
 
 /*큰 노트북 */
