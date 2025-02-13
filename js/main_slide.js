@@ -1,9 +1,9 @@
 //메인 페이지 메인 슬라이더
-const swiperMain = new Swiper('.main-con', {
-  effect: 'coverflow',
+const swiperMain = new Swiper(".main-con", {
+  effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: 'auto',
+  slidesPerView: "auto",
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
@@ -17,7 +17,7 @@ const swiperMain = new Swiper('.main-con', {
   },
   loop: true,
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
   // 반응형 브레이크 포인트
@@ -39,15 +39,16 @@ const swiperMain = new Swiper('.main-con', {
 
     1025: {
       spaceBetween: 60,
+      pagination: false,
     },
   },
 });
 
 // 메인 페이지 포트폴리오 슬라이더
-const swiperPort = new Swiper('.port-con', {
-  effect: 'coverflow',
+const swiperPort = new Swiper(".port-con", {
+  effect: "coverflow",
   centeredSlides: true,
-  slidesPerView: 'auto',
+  slidesPerView: "auto",
   spaceBetween: 40,
   coverflowEffect: {
     rotate: 20,
@@ -62,7 +63,7 @@ const swiperPort = new Swiper('.port-con', {
   },
   loop: true,
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
   // 반응형 브레이크 포인트
@@ -82,15 +83,17 @@ const swiperPort = new Swiper('.port-con', {
       pagination: false,
     },
 
-    1025: {},
+    1025: {
+      pagination: false,
+    },
   },
 });
 
 //메인 페이지 스타일가이드 슬라이더
-const swiperStyle = new Swiper('.style-con', {
-  effect: 'coverflow',
+const swiperStyle = new Swiper(".style-con", {
+  effect: "coverflow",
   centeredSlides: true,
-  slidesPerView: 'auto',
+  slidesPerView: "auto",
   spaceBetween: 50,
   loop: true,
   autoplay: {
@@ -105,7 +108,7 @@ const swiperStyle = new Swiper('.style-con', {
     slideShadows: false,
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
   breakpoints: {
@@ -123,6 +126,8 @@ const swiperStyle = new Swiper('.style-con', {
       pagination: false,
     },
 
-    1025: {},
+    1025: {
+      pagination: false,
+    },
   },
 });
