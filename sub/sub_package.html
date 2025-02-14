@@ -4,8 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>compare package</title>
+
     <!-- css -->
     <link rel="stylesheet" href="../css/sub/sub_package.css" />
+    <!-- responsive -->
+    <link
+      rel="stylesheet"
+      href="../css/responsive/sub_responsive/sub_package_responsive.css"
+    />
+
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <script src="../js/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -79,33 +89,6 @@
       </header>
       <!-- 메인 -->
       <main>
-        <!-- 플러팅 버튼 -->
-         <div class="floating_wrap">
-          <div class="floating_btn">
-            <a href="#package_main">
-            <p>패키지</p>
-            <img src="../img/sub/sub_package/icons/Holographic wrapped gift box.svg" alt="패키지 선택">
-          </a>
-          </div>
-          <div class="floating_btn">
-            <a href="#package_designer">
-            <p>디자이너</p>
-            <img src="../img/sub/sub_package/icons/online call and software dashboard with 3D elements.svg" alt="패키지 선택">
-          </a>
-          </div>
-          <div class="floating_btn">
-            <a href="#style_wrap">
-            <p>스타일</p>
-            <img src="../img/sub/sub_package/icons/burst of plastic rectangles with different textures.svg" alt="패키지 선택">
-          </a>
-          </div>
-          <div class="floating_btn">
-            <a href="#select_wrap">
-            <p>세부 항목</p>
-            <img src="../img/sub/sub_package/icons/search bar and three checkboxes.svg" alt="패키지 선택">
-          </a>
-          </div>
-         </div>
         <!--패키지 메인 섹션-->
         <section id="package_main">
           <div class="package_wrap">
@@ -166,13 +149,13 @@
         <section id="package_designer">
           <div class="designer_wrap">
             <!-- 타이틀 -->
-             <div class="title">
-            <h2>디자이너 선택</h2>
-          </div>
+            <div class="title">
+              <h2>디자이너 선택</h2>
+            </div>
             <!-- 디자이너 메뉴 영역 -->
             <div class="designer_menu">
               <ul>
-                  <img src="../img/common/minus.svg" alt="왼쪽 버튼">
+                <img src="../img/common/minus.svg" alt="왼쪽 버튼" />
                 <li>
                   <a href="#">빈티지</a>
                 </li>
@@ -188,36 +171,70 @@
                 <li>
                   <a href="#">펑키</a>
                 </li>
-                <img src="../img/common/plus.svg" alt="오른쪽 버튼">
+                <img src="../img/common/plus.svg" alt="오른쪽 버튼" />
               </ul>
             </div>
           </div>
           <!-- 디자이너 이미지 영역 -->
-          <div class="designer_image_con">
-            <div class="designer_image">
-              <a href="#">
-                <img src="../img/sub/sub_package/sub_sec1/package-sec1-1.png" alt="디자이너1" />
-              </a>
-            </div>
-            <div class="designer_image">
-              <a href="#">
-                <img src="../img/sub/sub_package/sub_sec1/package-sec1-2.png" alt="디자이너2" />
-              </a>
-            </div>
-            <div class="designer_image">
-              <a href="#">
-                <img src="../img/sub/sub_package/sub_sec1/package-sec1-3.png" alt="디자이너3" />
-              </a>
-            </div>
-            <div class="designer_image">
-              <a href="#">
-                <img src="../img/sub/sub_package/sub_sec1/package-sec1-4.png" alt="디자이너4" />
-              </a>
-            </div>
-            <div class="designer_image">
-              <a href="#">
-                <img src="../img/sub/sub_package/sub_sec1/package-sec1-5.png" alt="디자이너5" />
-              </a>
+          <div class="swiper designer-image-con">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide designer_image">
+                <a href="#">
+                  <img
+                    src="../img/sub/sub_package/sub_sec1/package-sec1-1.png"
+                    alt="디자이너1"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide designer_image">
+                <a href="#">
+                  <img
+                    src="../img/sub/sub_package/sub_sec1/package-sec1-2.png"
+                    alt="디자이너2"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide designer_image">
+                <a href="#">
+                  <img
+                    src="../img/sub/sub_package/sub_sec1/package-sec1-3.png"
+                    alt="디자이너3"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide designer_image">
+                <a href="#">
+                  <img
+                    src="../img/sub/sub_package/sub_sec1/package-sec1-4.png"
+                    alt="디자이너4"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide designer_image">
+                <a href="#">
+                  <img
+                    src="../img/sub/sub_package/sub_sec1/package-sec1-5.png"
+                    alt="디자이너5"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide designer_image">
+                <a href="#">
+                  <img
+                    src="../img/sub/sub_package/sub_sec1/package-sec1-5.png"
+                    alt="디자이너5"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide designer_image">
+                <a href="#">
+                  <img
+                    src="../img/sub/sub_package/sub_sec1/package-sec1-5.png"
+                    alt="디자이너5"
+                  />
+                </a>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </section>
@@ -225,84 +242,144 @@
         <section id="style_wrap">
           <div class="style_con">
             <!-- 타이틀 -->
-             <div class="title">
-            <h2>스타일 선택</h2>
-          </div>
+            <div class="title">
+              <h2>스타일 선택</h2>
+            </div>
             <!-- 버튼 영역 -->
             <div class="style_btn_box">
               <div class="style_btn">
                 <p>STREET</p>
                 <a href="#">
-                  <img src="../img/main/main_sec2/prt_image1.jpg" alt="버튼 이미지 1" />
+                  <img
+                    src="../img/main/main_sec2/prt_image1.jpg"
+                    alt="버튼 이미지 1"
+                  />
                 </a>
               </div>
               <div class="style_btn">
                 <p>CITYBOY</p>
                 <a href="#">
-                  <img src="../img/main/main_sec2/prt_image2.jpg" alt="버튼 이미지 1" />
+                  <img
+                    src="../img/main/main_sec2/prt_image2.jpg"
+                    alt="버튼 이미지 1"
+                  />
                 </a>
               </div>
               <div class="style_btn">
                 <p>CASUAL</p>
                 <a href="#">
-                  <img src="../img/main/main_sec2/prt_image3.jpg" alt="버튼 이미지 1" />
+                  <img
+                    src="../img/main/main_sec2/prt_image3.jpg"
+                    alt="버튼 이미지 1"
+                  />
                 </a>
               </div>
               <div class="style_btn">
                 <p>OFFICE</p>
                 <a href="#">
-                  <img src="../img/main/main_sec2/prt_image4.jpg" alt="버튼 이미지 1" />
+                  <img
+                    src="../img/main/main_sec2/prt_image4.jpg"
+                    alt="버튼 이미지 1"
+                  />
                 </a>
               </div>
               <div class="style_btn">
                 <p>AMECAZI</p>
                 <a href="#">
-                  <img src="../img/main/main_sec2/prt_image1.jpg" alt="버튼 이미지 1" />
+                  <img
+                    src="../img/main/main_sec2/prt_image1.jpg"
+                    alt="버튼 이미지 1"
+                  />
                 </a>
               </div>
               <div class="style_btn">
                 <p>VINTAGE</p>
                 <a href="#">
-                  <img src="../img/main/main_sec2/prt_image1.jpg" alt="버튼 이미지 1" />
+                  <img
+                    src="../img/main/main_sec2/prt_image1.jpg"
+                    alt="버튼 이미지 1"
+                  />
                 </a>
               </div>
             </div>
             <!-- 스타일 이미지 영역 -->
-            <div class="style_image_con">
-              <div class="style_image">
-                <a href="#">
-                  <img src="../img/main/main_img/main-img1.jpg" alt="스타일1" />
-                </a>
-              </div>
-              <div class="style_image">
-                <a href="#">
-                  <img src="../img/main/main_img/main-img2.jpg" alt="스타일2" />
-                </a>
-              </div>
-              <div class="style_image">
-                <a href="#">
-                  <img src="../img/main/main_img/main-img3.jpg" alt="스타일3" />
-                </a>
-              </div>
-              <div class="style_image">
-                <a href="#">
-                  <img src="../img/main/main_img/main-img1.jpg" alt="스타일4" />
-                </a>
-              </div>
-              <div class="style_image">
-                <a href="#">
-                  <img src="../img/main/main_img/main-img2.jpg" alt="스타일5" />
-                </a>
+            <div class="swiper style_image_con">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide style_image">
+                  <a href="#">
+                    <img
+                      src="../img/main/main_img/main-img1.jpg"
+                      alt="스타일1"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide style_image">
+                  <a href="#">
+                    <img
+                      src="../img/main/main_img/main-img2.jpg"
+                      alt="스타일2"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide style_image">
+                  <a href="#">
+                    <img
+                      src="../img/main/main_img/main-img3.jpg"
+                      alt="스타일3"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide style_image">
+                  <a href="#">
+                    <img
+                      src="../img/main/main_img/main-img1.jpg"
+                      alt="스타일4"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide style_image">
+                  <a href="#">
+                    <img
+                      src="../img/main/main_img/main-img2.jpg"
+                      alt="스타일5"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide style_image">
+                  <a href="#">
+                    <img
+                      src="../img/main/main_img/main-img2.jpg"
+                      alt="스타일5"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide style_image">
+                  <a href="#">
+                    <img
+                      src="../img/main/main_img/main-img2.jpg"
+                      alt="스타일5"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide style_image">
+                  <a href="#">
+                    <img
+                      src="../img/main/main_img/main-img2.jpg"
+                      alt="스타일5"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
+          </div>
         </section>
         <!-- 세부 항목 선택 섹션 -->
-         <section id="select_wrap">
+        <section id="select_wrap">
           <div class="select_con">
             <!-- 타이틀 -->
-             <div class="title">
-            <h2>세부 항목 선택</h2>
-          </div>
+            <div class="title">
+              <h2>세부 항목 선택</h2>
+            </div>
             <div class="select_menu">
               <ul>
                 <li>
@@ -319,9 +396,9 @@
                 </li>
               </ul>
             </div>
-              <div class="select_box"></div>
+            <div class="select_box"></div>
           </div>
-         </section>
+        </section>
       </main>
       <!-- 푸터 -->
       <footer>
@@ -359,6 +436,7 @@
         </div>
       </footer>
     </div>
-    <script src="./js/all_menu.js"></script>
+    <script src="../js/all_menu.js"></script>
+    <script src="../js/sub_pakage_slide.js"></script>
   </body>
 </html>

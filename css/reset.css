@@ -158,9 +158,5 @@ img {
   display: block;
   border: none;
   max-width: 100%;
-}
-i {
-  display: block;
   cursor: pointer;
-  font-size: var(--md-font-size);
 }

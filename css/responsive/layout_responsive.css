@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('./common_responsive.css');
+@import url("./common_responsive.css");
 /* 모바일 */
 @media screen and (min-width: 320px) and (max-width: 480px) {
   /* 메인 섹션 */
@@ -1631,33 +1631,128 @@
   /* 메인 배너 */
   .main_banner {
     width: 100%;
-    height: 850px;
+    height: 900px;
     padding: 100px 0;
   }
   /* 메인 컨테츠 영역 */
   .main_wrap {
-    width: 90%;
+    width: 95%;
     height: auto;
     margin: 0 auto;
     z-index: 99;
+    padding: 80px 0;
   }
   .main_wrap > .main_title {
-    font-size: var(--lg-font-size);
-    line-height: clamp(var(--lg-line-height), 2vw, var(--xl-font-size));
-    opacity: 0;
-    animation: text-left 1s ease-in-out 1s 1 forwards;
+    font-size: clamp(var(--lg-font-size), 3vw, var(--xl-font-size));
+    line-height: 1.1;
   }
-  .swiper-pagenation {
-    top: 0;
+  /* sec1 */
+  .chat_left h3 {
+    font-size: clamp(32px, 2.4vw, 42px);
+    line-height: 1.4;
   }
-  .swiper:not(.style-con, .port-con) {
-    width: 100%;
-    height: 37vw;
-    margin: 30px 0;
-    display: flex;
+  .chat_left p:nth-child(2) {
+    font-size: clamp(22px, 1.8vw, 30px);
+    line-height: 1.4;
+  }
+  /* 폰 이미지 영역 */
+  .phone_con > img {
+    top: -42%;
+    left: 37%;
+  }
+  /* 채팅 박스 영역 */
+  .chat_box {
+    position: absolute;
+  }
+  .chat_btn {
+    width: 80%;
+  }
+
+  /* 채팅 박스 순서 */
+  .chat_box:nth-of-type(1) {
+    height: 450px;
+    top: -2%;
+    left: -25%;
+  }
+  .chat_box:nth-of-type(2) {
+    height: 250px;
+    top: 87%;
+    left: -4%;
+  }
+  .chat_box:nth-of-type(3) {
+    height: 350px;
+    top: 136%;
+    left: -25%;
+  }
+  /* sec2 */
+  .prt_wrap > h2 {
+    margin-right: 4%;
+  }
+  /* 텍스트 영역 */
+  .prt_right > p:first-child {
+    font-size: clamp(22px, 1.8vw, 30px);
+    line-height: 1.4;
+  }
+  .prt_right > h3 {
+    font-size: clamp(32px, 2.4vw, 42px);
+    line-height: 1.4;
+  }
+  /* 버튼 영역 */
+  .prt_btn {
+    width: 80%;
+  }
+  /* sec4 */
+  .bg_bottom {
+    width: 40%;
+    height: auto;
+    left: -20%;
+    top: 8%;
+  }
+
+  .review_wrap {
+    width: 95%;
+    gap: 20px;
     justify-content: center;
-    align-items: center;
-    gap: 40px;
-    z-index: 99;
+  }
+  /* sec5 */
+  .bg_bt_right {
+    width: 40%;
+    height: auto;
+    right: -20%;
+    bottom: -8%;
+  }
+  .info_wrap {
+    width: 95%;
+  }
+  .info_top {
+    height: 500px;
+    gap: 20px;
+    justify-content: center;
+  }
+  /* 위에 컨텐츠 왼쪽 영역 */
+  .left_box {
+    height: auto;
+  }
+  .left_box > p {
+    font-size: clamp(20px, 1.5vw, 23px);
+  }
+  /* 위에 오른쪽 영역 */
+  .right_box {
+    height: auto;
+  }
+  /* 아래쪽 영역 */
+  .info_bottom {
+    height: 500px;
+    justify-content: center;
+    gap: 20px;
+  }
+  .package_left {
+    height: 100%;
+  }
+  .package_left > a {
+    height: 100%;
+  }
+  .package_right {
+    height: 100%;
   }
 }
