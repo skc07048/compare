@@ -8,7 +8,9 @@
   height: 1000px;
   padding: 100px 0;
   background-image: var(--background-gradient);
+  position: relative;
 }
+
 /* 메인 컨테츠 영역 */
 .main_wrap {
   width: 1600px;
@@ -128,6 +130,7 @@
   padding: 400px 0;
   position: relative;
 }
+
 .bg_left {
   width: 700px;
   height: 700px;

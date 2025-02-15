@@ -52,6 +52,11 @@
     padding: 0;
     padding-top: 80px;
   }
+  #sec1 > h2 {
+    margin-left: 0;
+    margin: 0 auto;
+    margin-bottom: 14px;
+  }
   .bg_left {
     display: none;
   }
@@ -1640,7 +1645,7 @@
     height: auto;
     margin: 0 auto;
     z-index: 99;
-    padding: 80px 0;
+    padding: 30px 0;
   }
   .main_wrap > .main_title {
     font-size: clamp(var(--lg-font-size), 3vw, var(--xl-font-size));

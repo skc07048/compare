@@ -2,12 +2,44 @@ const swiperDesigner = new Swiper(".designer-image-con", {
   slidesPerView: 5,
   spaceBetween: 30,
   freeMode: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      loop: true,
+    },
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+      loop: true,
+    },
+    769: {
+      slidesPerView: 4,
+      spaceBetween: 15,
+    },
+    1441: {},
+  },
 });
 
 const swiperStyle = new Swiper(".style_image_con", {
   slidesPerView: 5,
   spaceBetween: 30,
   freeMode: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    769: {
+      slidesPerView: 4,
+      spaceBetween: 15,
+    },
+    1441: {},
+  },
 });
 
 document.addEventListener("scroll", function () {
