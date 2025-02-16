@@ -124,6 +124,10 @@
   transform: translateY(-3px);
   color: var(--pointcolor);
 }
+.designer_menu > ul img {
+  width: 3%;
+  height: auto;
+}
 
 .designer-image-con {
   width: 100%;
@@ -202,7 +206,7 @@
   border-radius: 80px;
 }
 .style_btn:nth-child(even) {
-  transform: translateY(-50px);
+  transform: translateY(-60px);
 }
 .style_btn:hover a {
   transform: scale(1.2);
@@ -224,7 +228,7 @@
   box-sizing: border-box;
 }
 .style_btn:hover p {
-  transform: translateY(-70px);
+  transform: translateY(-80px);
   opacity: 1;
   color: var(--pointcolor);
 }
@@ -322,7 +326,7 @@
 }
 .select_list > a {
   font-size: var(--xs-font-size);
-  font-weight: 600;
+  font-weight: 400;
   transition: 0.5s;
 }
 .select_list > a:hover {

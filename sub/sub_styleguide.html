@@ -6,6 +6,14 @@
     <title>compare styleguide</title>
     <!-- css -->
     <link rel="stylesheet" href="../css/sub/sub_styleguide.css" />
+    <!-- responsive -->
+    <link
+      rel="stylesheet"
+      href="../css/responsive/sub_responsive/sub_styleguide_responsive.css"
+    />
+    <!-- swiper slide -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <script src="../js/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -65,7 +73,7 @@
           </nav>
           <!-- 아이콘 -->
           <div class="icon_wrap">
-            div class="icons">
+            <div class="icons">
               <a href="#">
                 <img src="../img/icons/search.svg" alt="검색" />
               </a>
@@ -80,6 +88,7 @@
                 <img src="../img/icons/user_info.svg" alt="회원정보메뉴" />
               </a>
             </div>
+
             <div class="all_menu_btn">
               <span class="bar"></span>
               <span class="bar"></span>
@@ -87,11 +96,11 @@
             </div>
             <div class="all_menu">
               <a href="#">MY PAGE</a>
-              <a href="./sub/sub_package.html">PACKAGE</a>
-              <a href="./sub/sub_styleguide.html">STYLEGUIDE</a>
-              <a href="./sub/sub_designer.html">DESIGNER</a>
-              <a href="./sub/sub_comunity.html">COMUNITY</a>
-              <a href="./sub/sub_service.html">SERVICE</a>
+              <a href="./sub_package.html">PACKAGE</a>
+              <a href="./sub_styleguide.html">STYLEGUIDE</a>
+              <a href="./sub_designer.html">DESIGNER</a>
+              <a href="./sub_comunity.html">COMUNITY</a>
+              <a href="./sub_service.html">SERVICE</a>
             </div>
           </div>
         </div>
@@ -132,46 +141,64 @@
           <div class="title">
             <h2>베스트 스타일</h2>
           </div>
-          <div class="best_wrap">
-            <div class="best_image">
-              <a href="#">
-                <img
-                  src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-1.jpg"
-                  alt="베스트 스타일 이미지1"
-                />
-              </a>
-            </div>
-            <div class="best_image">
-              <a href="#">
-                <img
-                  src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
-                  alt="베스트 스타일 이미지2"
-                />
-              </a>
-            </div>
-            <div class="best_image">
-              <a href="#">
-                <img
-                  src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-3.jpg"
-                  alt="베스트 스타일 이미지3"
-                />
-              </a>
-            </div>
-            <div class="best_image">
-              <a href="#">
-                <img
-                  src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-4.jpg"
-                  alt="베스트 스타일 이미지4"
-                />
-              </a>
-            </div>
-            <div class="best_image">
-              <a href="#">
-                <img
-                  src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-5.jpg"
-                  alt="베스트 스타일 이미지5"
-                />
-              </a>
+          <div class="swiper best-con">
+            <div class="swiper-wrapper best_wrap">
+              <div class="swiper-slide best_image">
+                <a href="#">
+                  <img
+                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-1.jpg"
+                    alt="베스트 스타일 이미지1"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide best_image">
+                <a href="#">
+                  <img
+                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                    alt="베스트 스타일 이미지2"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide best_image">
+                <a href="#">
+                  <img
+                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-3.jpg"
+                    alt="베스트 스타일 이미지3"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide best_image">
+                <a href="#">
+                  <img
+                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-4.jpg"
+                    alt="베스트 스타일 이미지4"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide best_image">
+                <a href="#">
+                  <img
+                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-5.jpg"
+                    alt="베스트 스타일 이미지5"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide best_image">
+                <a href="#">
+                  <img
+                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-5.jpg"
+                    alt="베스트 스타일 이미지5"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide best_image">
+                <a href="#">
+                  <img
+                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-5.jpg"
+                    alt="베스트 스타일 이미지5"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -202,88 +229,140 @@
                 <img src="../img/common/plus.svg" alt="오른쪽 버튼" />
               </ul>
             </div>
-            <div class="style_top">
-              <div class="top_image">
-                <a href="#">
-                  <img
-                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
-                    alt="스타일 가이드 이미지1"
-                  />
-                </a>
-              </div>
-              <div class="top_image">
-                <a href="#">
-                  <img
-                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
-                    alt="스타일 가이드 이미지1"
-                  />
-                </a>
-              </div>
-              <div class="top_image">
-                <a href="#">
-                  <img
-                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
-                    alt="스타일 가이드 이미지1"
-                  />
-                </a>
-              </div>
-              <div class="top_image">
-                <a href="#">
-                  <img
-                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
-                    alt="스타일 가이드 이미지1"
-                  />
-                </a>
-              </div>
-              <div class="top_image">
-                <a href="#">
-                  <img
-                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
-                    alt="스타일 가이드 이미지1"
-                  />
-                </a>
+            <div class="swiper style_top">
+              <div class="swiper-wrapper style_top_wrap">
+                <div class="swiper-slide top_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide top_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide top_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide top_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide top_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide top_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide top_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide top_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="style_bottom">
-              <div class="bottom_image">
-                <a href="#">
-                  <img
-                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
-                    alt="스타일 가이드 이미지1"
-                  />
-                </a>
-              </div>
-              <div class="bottom_image">
-                <a href="#">
-                  <img
-                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
-                    alt="스타일 가이드 이미지1"
-                  />
-                </a>
-              </div>
-              <div class="bottom_image">
-                <a href="#">
-                  <img
-                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
-                    alt="스타일 가이드 이미지1"
-                  />
-                </a>
-              </div>
-              <div class="bottom_image">
-                <a href="#">
-                  <img
-                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
-                    alt="스타일 가이드 이미지1"
-                  />
-                </a>
-              </div>
-              <div class="bottom_image">
-                <a href="#">
-                  <img
-                    src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
-                    alt="스타일 가이드 이미지1"
-                  />
-                </a>
+            <div class="swiper style_bottom">
+              <div class="swiper-wrapper style_bottom_wrap">
+                <div class="swiper-slide bottom_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide bottom_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide bottom_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide bottom_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide bottom_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide bottom_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide bottom_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide bottom_image">
+                  <a href="#">
+                    <img
+                      src="../img/sub/sub_styleguide/sub2_sec1/sub2-sec1-2.jpg"
+                      alt="스타일 가이드 이미지1"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -296,43 +375,76 @@
               <h2>스타일 룩북</h2>
             </div>
             <!-- 비디오 영역 -->
-            <div class="lookbook_wrap">
-              <div class="lookbook_video">
-                <iframe
-                  width="1000"
-                  height="650"
-                  src="https://www.youtube.com/embed/yuEALpiB8Rg"
-                  title="남자 느좋 겨울코디 룩북 8가지, 무신사 설날 빅세일 꿀템 추천!"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
+            <div class="swiper lookbook_slide_con">
+              <div class="swiper-wrapper lookbook_wrap">
+                <div class="swiper-slide iframe">
+                  <iframe
+                    width="1000"
+                    height="650"
+                    src="https://www.youtube.com/embed/yuEALpiB8Rg?controls=0&modestbranding=1&rel=0"
+                    title="남자 느좋 겨울코디 룩북 8가지, 무신사 설날 빅세일 꿀템 추천!"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                <div class="swiper-slide iframe">
+                  <iframe
+                    width="1000"
+                    height="700"
+                    src="https://www.youtube.com/embed/B-AyJxQ5N-M?controls=1&modestbranding=1&rel=0"
+                    title="156cm 옷장템⋆˚ ♡ 겨울 무드 요즘 데일리룩 모음집.｡ﾟ🧷🎀 쿨톤 폭닥 아우터, 울스커트, 핀터레스트 가디건, 반팔니트,어그부츠, 목도리 ,지그재그,패션하울 | 오늘도 희다"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                <div class="swiper-slide iframe">
+                  <iframe
+                    width="1000"
+                    height="650"
+                    src="https://www.youtube.com/embed/k8Zn4mjwRzw?controls=0&modestbranding=1&rel=0"
+                    title="1월 느좋템 쇼핑 리스트 | 바지 맛집 추천 | 아캄, 유스, 해칭룸 | 가방 추천 | 보스턴백 | 향수 추천 | 마르지엘라 재즈클럽 | 셔츠 추천 |틀영 셔츠"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                <div class="swiper-slide iframe">
+                  <iframe
+                    width="1000"
+                    height="650"
+                    src="https://www.youtube.com/embed/k8Zn4mjwRzw?controls=0&modestbranding=1&rel=0"
+                    title="1월 느좋템 쇼핑 리스트 | 바지 맛집 추천 | 아캄, 유스, 해칭룸 | 가방 추천 | 보스턴백 | 향수 추천 | 마르지엘라 재즈클럽 | 셔츠 추천 |틀영 셔츠"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                <div class="swiper-slide iframe">
+                  <iframe
+                    width="1000"
+                    height="650"
+                    src="https://www.youtube.com/embed/k8Zn4mjwRzw?controls=0&modestbranding=1&rel=0"
+                    title="1월 느좋템 쇼핑 리스트 | 바지 맛집 추천 | 아캄, 유스, 해칭룸 | 가방 추천 | 보스턴백 | 향수 추천 | 마르지엘라 재즈클럽 | 셔츠 추천 |틀영 셔츠"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
               </div>
-              <div class="lookbook_video">
-                <iframe
-                  width="1000"
-                  height="700"
-                  src="https://www.youtube.com/embed/B-AyJxQ5N-M"
-                  title="156cm 옷장템⋆˚ ♡ 겨울 무드 요즘 데일리룩 모음집.｡ﾟ🧷🎀 쿨톤 폭닥 아우터, 울스커트, 핀터레스트 가디건, 반팔니트,어그부츠, 목도리 ,지그재그,패션하울 | 오늘도 희다"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div class="lookbook_video">
-                <iframe
-                  width="1000"
-                  height="650"
-                  src="https://www.youtube.com/embed/k8Zn4mjwRzw"
-                  title="1월 느좋템 쇼핑 리스트 | 바지 맛집 추천 | 아캄, 유스, 해칭룸 | 가방 추천 | 보스턴백 | 향수 추천 | 마르지엘라 재즈클럽 | 셔츠 추천 |틀영 셔츠"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
-              </div>
+              <div class="swiper-button-next look_next"></div>
+              <div class="swiper-button-prev look_prev"></div>
             </div>
           </div>
         </section>
@@ -373,6 +485,7 @@
         </div>
       </footer>
     </div>
-    <script src="./js/all_menu.js"></script>
+    <script src="../js/all_menu.js"></script>
+    <script src="../js/sub_style_guide.js"></script>
   </body>
 </html>
