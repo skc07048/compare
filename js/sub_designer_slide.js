@@ -15,6 +15,10 @@ const swiper = new Swiper(".placestyle_con", {
       slidesPerView: 1,
       loop: true,
     },
+    480: {
+      slidesPerView: 1,
+      loop: true,
+    },
     1441: {},
   },
 });

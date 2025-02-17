@@ -133,6 +133,7 @@ const swiperLook = new Swiper(".lookbook_slide_con", {
       slidesPerView: 1,
       spaceBetween: 0,
       loop: true,
+      autoplay: false,
     },
     1025: {
       slidesPerView: 2,
