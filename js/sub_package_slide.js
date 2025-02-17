@@ -2,6 +2,7 @@ const swiperDesigner = new Swiper(".designer-image-con", {
   slidesPerView: 5,
   spaceBetween: 20,
   freeMode: true,
+  loop: true,
   breakpoints: {
     320: {
       slidesPerView: 2,
@@ -23,6 +24,7 @@ const swiperStyle = new Swiper(".style_image_con", {
   slidesPerView: 5,
   spaceBetween: 20,
   freeMode: true,
+  loop: true,
   breakpoints: {
     320: {
       slidesPerView: 2,

@@ -1,0 +1,146 @@
+@charset "utf-8";
+@import url("/css/responsive/common_responsive.css");
+
+/* 모바일 */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* 디자이너 메인 영역 */
+  .designer_main {
+    width: 100%;
+    height: auto;
+    padding: 80px 0;
+    box-sizing: border-box;
+  }
+  .text_move {
+    display: none;
+  }
+  .text_wrap > div > p {
+    font-size: 80px;
+  }
+  /* 메인 이미지 영역 */
+  .designer_wrap {
+    width: 90%;
+    height: auto;
+    padding: 0px;
+    margin: 20px auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  /* 왼쪽 이미지 영역 */
+  .designer_wrap > .left_image {
+    max-width: 90vw;
+    max-height: 90vw;
+    z-index: 0;
+  }
+  /* 오른쪽 이미지 영역 */
+  .designer_wrap > .right_image {
+    display: none;
+  }
+
+  .designer_wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: 0;
+  }
+  .left_image > img {
+    border-radius: 0 0 50% 0;
+  }
+  .right_image > img {
+    border-radius: 50% 0 0 0;
+  }
+  /* 디자이너 공간 */
+  .designer_place {
+    width: 100%;
+  }
+  .place_wrap {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  /* 디자이너 공간 메뉴 영역 */
+  .place_menu {
+    width: 90%;
+    height: 50px;
+    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .place_menu > ul {
+    justify-content: space-evenly;
+    gap: 0;
+  }
+  .place_menu > ul > li > a {
+    padding: 0;
+    font-size: var(--xxs-font-size);
+  }
+  .place_menu > ul img {
+    display: none;
+  }
+  .placestyle_con {
+    width: 100%;
+    height: auto;
+  }
+  .swiper-wrapper {
+    height: auto;
+  }
+  /* 이미지 영역 */
+  .place_image {
+    height: 60vw;
+    margin-bottom: 14px;
+  }
+  .place_image > a > img {
+    border-radius: 15px;
+  }
+  .place_text > h3 {
+    font-size: clamp(18px, 6vw, 26px);
+    line-height: 1;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  .text_bottom {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text_bottom > .designer_info {
+    width: 45%;
+    height: fit-content;
+  }
+
+  .designer_info p {
+    font-size: clamp(14px, 4vw, 18px);
+    line-height: var(--sm-line-height);
+    font-weight: 400;
+    color: #d9d9d9;
+    margin: 0;
+    cursor: context-menu;
+  }
+  /* 디자이너 인포 서브 이미지 */
+  .text_bottom > .sub_image {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .text_bottom > .sub_image div {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* 태블릿 */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+/* 작은 노트북 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* 큰 노트북 */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+}
+
+/* 데스크탑 */
+@media screen and (min-width: 1441px) {
+}

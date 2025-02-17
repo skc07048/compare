@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import url('../reset.css');
-@import url('../common.css');
+@import url("../reset.css");
+@import url("../common.css");
 
 /* 디자이너 메인 영역 */
 .designer_main {
@@ -15,7 +15,6 @@
 /* 텍스트 애니메이션 */
 .text_move {
   position: absolute;
-  font-size: var(--xl-font-size);
   animation: text-move 80s linear infinite;
   width: fit-content;
   display: flex;
@@ -37,7 +36,7 @@
 .text_wrap > div > p {
   font-size: 100px;
   font-weight: 900;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: #444;
 }
 .designer_main > .text_move:first-child {
@@ -64,6 +63,7 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  margin: 40px 0;
 }
 /* 왼쪽 이미지 영역 */
 .designer_wrap > .left_image {
@@ -140,18 +140,25 @@
 }
 .placestyle_con {
   width: 100%;
-  height: 100%;
+  height: 1000px;
+}
+.swiper-wrapper {
+  width: 100%;
+  height: 70vw;
+  display: flex;
 }
 .place_con {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
 }
 /* 이미지 영역 */
 .place_image {
-  width: 800px;
-  height: 500px;
+  width: 100%;
+  height: 45vh;
+  margin-bottom: 20px;
 }
 .place_image > a {
   width: 100%;
@@ -165,7 +172,7 @@
 }
 /* 텍스트 영역 */
 .place_text {
-  width: 650px;
+  width: 100%;
   height: auto;
 }
 .place_text > h3 {
