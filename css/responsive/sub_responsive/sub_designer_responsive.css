@@ -35,7 +35,7 @@
     max-width: 90vw;
     max-height: 90vw;
     z-index: 1;
-    opacity: 0;
+    opacity: 0.8;
   }
   /* 오른쪽 이미지 영역 */
   .designer_wrap > .right_image {
@@ -66,7 +66,6 @@
   .place_menu {
     width: 90%;
     height: 50px;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -195,7 +194,6 @@
   .comment > div:last-child {
     width: 500px;
     height: auto;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
     border-radius: 50px;
   }
 }
@@ -256,7 +254,6 @@
   .place_menu {
     width: 90%;
     height: 50px;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -358,7 +355,6 @@
   .comment > div:last-child {
     width: 500px;
     height: auto;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
     border-radius: 50px;
   }
   .comment p {
@@ -442,7 +438,6 @@
   .place_menu {
     width: 90%;
     height: 80px;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
     margin: 0 auto;
     margin-bottom: 40px;
   }
@@ -604,7 +599,6 @@
   .place_menu {
     width: 90%;
     height: 100px;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
     margin: 0 auto;
     margin-bottom: 40px;
   }
@@ -748,7 +742,6 @@
   .place_menu {
     width: 90%;
     height: 100px;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
     margin: 0 auto;
     margin-bottom: 40px;
   }

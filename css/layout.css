@@ -67,7 +67,7 @@
 .swiper-slide:not(.style-card, .custom_card) {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+  box-shadow: 0 8px 24px 0 rgba(120, 120, 120, 0.2);
   position: relative;
   background-position: center;
   background-size: cover;
@@ -158,7 +158,7 @@
   height: 500px;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+  box-shadow: 0 8px 24px 0 rgba(120, 120, 120, 0.2);
   border-radius: 0 30px 30px 0;
   padding: 0 72px;
   box-sizing: border-box;
@@ -214,7 +214,7 @@
   height: 500px;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+  box-shadow: 0 8px 24px 0 rgba(120, 120, 120, 0.2);
   border-radius: 30px 0 0 30px;
 }
 /* 핸드폰 이미지 영역 */
@@ -234,7 +234,7 @@
 .chat_box {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+  box-shadow: 0 8px 24px 0 rgba(120, 120, 120, 0.2);
   border-radius: 30px;
   width: 550px;
   height: auto;
@@ -413,7 +413,7 @@
   height: 500px;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+  box-shadow: 0 8px 24px 0 rgba(120, 120, 120, 0.2);
   border-radius: 30px 0 0 30px;
   padding: 0 72px;
   box-sizing: border-box;
@@ -534,7 +534,7 @@
 .style_card_back {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+  box-shadow: 0 8px 24px 0 rgba(120, 120, 120, 0.2);
   color: #fff;
   transform: rotateY(180deg);
 }
@@ -572,7 +572,7 @@
   height: 560px;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+  box-shadow: 0 8px 24px 0 rgba(120, 120, 120, 0.2);
   border-radius: 30px;
 }
 .review_image {
@@ -620,7 +620,7 @@
   height: 560px;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+  box-shadow: 0 8px 24px 0 rgba(120, 120, 120, 0.2);
   border-radius: 30px;
   padding: 90px;
   box-sizing: border-box;
@@ -699,7 +699,7 @@
   height: fit-content;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+  box-shadow: 0 8px 24px 0 rgba(120, 120, 120, 0.2);
   border-radius: 30px;
   padding: 60px 90px;
   box-sizing: border-box;
@@ -777,7 +777,7 @@
   height: fit-content;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.37);
+  box-shadow: 0 8px 24px 0 rgba(120, 120, 120, 0.2);
   border-radius: 30px;
   padding: 60px 90px;
   box-sizing: border-box;

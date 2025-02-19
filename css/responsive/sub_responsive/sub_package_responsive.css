@@ -20,7 +20,6 @@
   .card {
     width: 100%;
     height: auto;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
   }
   .card > a {
     display: flex;
@@ -71,7 +70,6 @@
   .designer_menu {
     width: 90%;
     height: 50px;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -174,7 +172,6 @@
   .select_menu {
     width: 90%;
     height: 50px;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -196,7 +193,6 @@
   .select_box {
     width: 90%;
     margin: 0 auto;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
   }
   .select_list {
     justify-content: center;
@@ -238,7 +234,6 @@
   .card {
     width: 100%;
     height: auto;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
   }
   .card > a {
     display: flex;
@@ -289,7 +284,6 @@
   .designer_menu {
     width: 90%;
     height: 60px;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -358,7 +352,6 @@
   .style_btn {
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(0);
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0);
     width: 26%;
     height: 8vw;
   }
@@ -390,7 +383,6 @@
   .select_menu {
     width: 90%;
     height: 60px;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -412,7 +404,6 @@
   .select_box {
     width: 90%;
     margin: 0 auto;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
   }
   .select_list {
     justify-content: center;
@@ -455,7 +446,6 @@
   .card {
     width: 100%;
     height: auto;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
   }
   .card > a {
     display: flex;
@@ -499,7 +489,6 @@
   .designer_menu {
     width: 90%;
     height: 60px;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
     margin: 0 auto;
     margin-bottom: 40px;
   }
@@ -580,7 +569,6 @@
   .select_menu {
     width: 90%;
     height: 60px;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
     margin: 0 auto;
     margin-bottom: 40px;
   }
@@ -602,7 +590,6 @@
   .select_box {
     width: 90%;
     margin: 0 auto;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
   }
   .select_list {
     justify-content: center;
@@ -649,7 +636,6 @@
   .card {
     width: 100%;
     height: auto;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
   }
   /* 카드 텍스트 영역 */
   .card_text {
@@ -745,7 +731,6 @@
   .select_menu {
     width: 80%;
     height: 80px;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
     margin: 0 auto;
     margin-bottom: 50px;
   }
@@ -763,7 +748,6 @@
   .select_box {
     width: 90%;
     margin: 0 auto;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
   }
   .select_list {
     justify-content: center;
@@ -810,7 +794,6 @@
   /* 카드 영역 */
   .card {
     height: auto;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
   }
   .card_image {
     height: 50%;
@@ -820,7 +803,6 @@
   .designer_menu {
     width: 90%;
     height: 100px;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
   }
   .designer_menu > ul {
     justify-content: space-around;
@@ -863,7 +845,6 @@
   .select_box {
     width: 90%;
     margin: 0 auto;
-    box-shadow: 0 8px 32px 0 rgba(120, 120, 120, 0.2);
   }
   .select_list {
     justify-content: space-around;
