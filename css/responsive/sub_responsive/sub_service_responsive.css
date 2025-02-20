@@ -1,0 +1,652 @@
+@charset "utf-8";
+@import url("/css/responsive/common_responsive.css");
+
+/* 모바일 */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* 서비스 메인 컨텐츠 */
+  #service_main {
+    width: 100%;
+    height: 400px;
+    padding: 100px 0;
+  }
+  /* 메인 배경 이미지 영역 */
+  .service_bg {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: -20%;
+    right: 40%;
+  }
+  .service_bg:nth-child(2) {
+    position: absolute;
+    top: 55%;
+    left: 45%;
+  }
+  .service_main_img {
+    display: none;
+  }
+  /* 메인 텍스트 영역 */
+  .text_box {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .text_box > p {
+    font-size: 40px;
+    font-weight: 900;
+    color: #000;
+  }
+  /* 주요 서비스 컨텐츠 */
+  #important_service {
+    padding: 100px 0;
+  }
+  .important_con {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .card_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  /* 카드 영역 */
+  .service_card {
+    width: 60%;
+    height: 60vw;
+    transition: 1s;
+  }
+  .service_card > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .service_card > a > div {
+    width: 25vw;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .service_card > a > p {
+    font-size: 5vw;
+    line-height: 1;
+  }
+  .service_card:hover {
+    transform: rotateY(0);
+  }
+  /* 지원 서비스 컨텐츠 */
+  #support_service {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .support_con {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .support_box {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .support_box > a {
+    padding: 0 20px;
+  }
+  .support_box h3 {
+    font-size: 5vw;
+    line-height: 1;
+  }
+  .support_box > a > img {
+    width: 8%;
+    height: auto;
+  }
+  /* 이용 약관 컨텐츠 */
+  #terms_service {
+    padding: 100px 0;
+  }
+  .terms_con {
+    width: 90%;
+  }
+  .terms_box {
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .terms_box > a {
+    padding: 0 20px;
+  }
+  .terms_box h3 {
+    font-size: 5vw;
+    line-height: 1;
+  }
+  .terms_box > a > img {
+    width: 8%;
+    height: auto;
+  }
+}
+
+/* 태블릿 */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* 서비스 메인 컨텐츠 */
+  #service_main {
+    width: 100%;
+    height: 500px;
+    padding: 100px 0;
+  }
+  /* 메인 배경 이미지 영역 */
+  .service_bg {
+    width: 55%;
+    height: auto;
+    position: absolute;
+    top: -15%;
+    right: 55%;
+  }
+  .service_bg:nth-child(2) {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+  }
+  /* 메인 텍스트 영역 */
+  .text_box {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .text_box > p {
+    font-size: 8vw;
+    font-weight: 900;
+    color: #000;
+  }
+  /* 메인 이미지 영역 */
+  .service_main_img {
+    display: none;
+  }
+  /* 주요 서비스 컨텐츠 */
+  #important_service {
+    padding: 150px 0;
+  }
+  .important_con {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .card_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  /* 카드 영역 */
+  .service_card {
+    width: 60%;
+    height: 50vw;
+    transition: 1s;
+  }
+  .service_card > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .service_card > a > div {
+    height: 80%;
+    margin-bottom: 0px;
+  }
+
+  .service_card > a > div img {
+    width: 20vw;
+  }
+  .service_card > a > p {
+    font-size: 2.5vw;
+    line-height: 1;
+  }
+  .service_card:hover {
+    transform: rotateY(0);
+  }
+  /* 지원 서비스 컨텐츠 */
+  #support_service {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .support_con {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .support_box {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .support_box > a {
+    padding: 0 20px;
+  }
+  .support_box h3 {
+    font-size: 3vw;
+    line-height: 1;
+  }
+  .support_box > a > img {
+    width: 5%;
+    height: auto;
+  }
+  /* 이용 약관 컨텐츠 */
+  #terms_service {
+    padding: 100px 0;
+  }
+  .terms_con {
+    width: 90%;
+  }
+  .terms_box {
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  .terms_box > a {
+    padding: 0 20px;
+  }
+  .terms_box h3 {
+    font-size: 3vw;
+    line-height: 1;
+  }
+  .terms_box > a > img {
+    width: 5%;
+    height: auto;
+  }
+}
+
+/* 작은 노트북 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 서비스 메인 컨텐츠 */
+  #service_main {
+    width: 100%;
+    height: 600px;
+    padding: 150px 0;
+    overflow: hidden;
+  }
+  /* 메인 배경 이미지 영역 */
+  .service_bg {
+    width: 55%;
+    height: auto;
+    position: absolute;
+    top: -20%;
+    right: 55%;
+  }
+  .service_bg:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+  }
+  /* 메인 텍스트 영역 */
+  .text_box {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+  }
+  .text_box > p {
+    font-size: 4vw;
+    font-weight: 900;
+    color: #000;
+  }
+  /* 메인 이미지 영역 */
+  .service_main_img {
+    width: 40vw;
+    height: auto;
+    top: 10%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  /* 주요 서비스 컨텐츠 */
+  #important_service {
+    padding: 200px 0;
+  }
+  .important_con {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .card_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  /* 카드 영역 */
+  .service_card {
+    width: 60%;
+    height: 50vw;
+  }
+  .service_card > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .service_card > a > div {
+    height: 80%;
+    margin-bottom: 0px;
+  }
+  .service_card > a > div img {
+    width: 20vw;
+  }
+
+  .service_card > a > p {
+    font-size: 2.5vw;
+    line-height: 1;
+  }
+  /* 지원 서비스 컨텐츠 */
+  #support_service {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .support_con {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .support_box {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .support_box > a {
+    padding: 0 20px;
+  }
+  .support_box h3 {
+    font-size: 3vw;
+    line-height: 1;
+  }
+  .support_box > a > img {
+    width: 5%;
+    height: auto;
+  }
+  /* 이용 약관 컨텐츠 */
+  #terms_service {
+    padding: 100px 0;
+  }
+  .terms_con {
+    width: 90%;
+  }
+  .terms_box {
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .terms_box > a {
+    padding: 0 20px;
+  }
+  .terms_box h3 {
+    font-size: 3vw;
+    line-height: 1;
+  }
+  .terms_box > a > img {
+    width: 5%;
+    height: auto;
+  }
+}
+
+/* 큰 노트북 */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* 서비스 메인 컨텐츠 */
+  #service_main {
+    width: 100%;
+    height: 800px;
+    padding: 100px 0;
+    overflow: hidden;
+  }
+  /* 메인 배경 이미지 영역 */
+  .service_bg {
+    width: 45%;
+    height: auto;
+    position: absolute;
+    top: -15%;
+    right: 55%;
+  }
+  .service_bg:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+  }
+  /* 메인 텍스트 영역 */
+  .text_box {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+  }
+  .text_box > p {
+    font-size: 4vw;
+    font-weight: 900;
+    color: #000;
+  }
+  /* 메인 이미지 영역 */
+  .service_main_img {
+    width: 40vw;
+    height: auto;
+    top: 10%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  /* 주요 서비스 컨텐츠 */
+  #important_service {
+    padding: 200px 0;
+  }
+  .important_con {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .card_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  /* 카드 영역 */
+  .service_card {
+    width: 60%;
+    height: 50vw;
+  }
+  .service_card > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .service_card > a > div {
+    height: 80%;
+    margin-bottom: 0px;
+  }
+  .service_card > a > div img {
+    width: 20vw;
+  }
+
+  .service_card > a > p {
+    font-size: 2.5vw;
+    line-height: 1;
+  }
+  /* 지원 서비스 컨텐츠 */
+  #support_service {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .support_con {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .support_box {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  .support_box > a {
+    padding: 0 40px;
+  }
+  .support_box h3 {
+    font-size: 2vw;
+    line-height: 1;
+  }
+  .support_box > a > img {
+    width: 4%;
+    height: auto;
+  }
+  /* 이용 약관 컨텐츠 */
+  #terms_service {
+    padding: 200px 0;
+  }
+  .terms_con {
+    width: 90%;
+  }
+  .terms_box {
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  .terms_box > a {
+    padding: 0 40px;
+  }
+  .terms_box h3 {
+    font-size: 2vw;
+    line-height: 1;
+  }
+  .terms_box > a > img {
+    width: 4%;
+    height: auto;
+  }
+}
+
+/* 데스크탑 */
+@media screen and (min-width: 1441px) {
+  /* 메인 배경 이미지 영역 */
+  .service_bg {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: -15%;
+    right: 60%;
+  }
+  .service_bg:nth-child(2) {
+    position: absolute;
+    top: 45%;
+    left: 65%;
+  }
+  /* 메인 텍스트 영역 */
+  .text_box {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+  }
+  .text_box > p {
+    font-size: 4vw;
+    font-weight: 900;
+    color: #000;
+  }
+  /* 메인 이미지 영역 */
+  .service_main_img {
+    width: 40vw;
+    height: auto;
+    top: 10%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  /* 주요 서비스 컨텐츠 */
+  #important_service {
+    padding: 200px 0;
+  }
+  .important_con {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .card_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  /* 카드 영역 */
+  .service_card {
+    width: 100%;
+    height: 40vw;
+  }
+  .service_card > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .service_card > a > div {
+    height: 80%;
+    margin-bottom: 0px;
+  }
+  .service_card > a > div img {
+    width: 15vw;
+  }
+
+  .service_card > a > p {
+    font-size: 2vw;
+    line-height: 1;
+  }
+  /* 지원 서비스 컨텐츠 */
+  #support_service {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .support_con {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .support_box {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  .support_box > a {
+    padding: 0 40px;
+  }
+  .support_box h3 {
+    font-size: 2vw;
+    line-height: 1;
+  }
+  .support_box > a > img {
+    width: 4%;
+    height: auto;
+  }
+  /* 이용 약관 컨텐츠 */
+  #terms_service {
+    padding: 200px 0;
+  }
+  .terms_con {
+    width: 80%;
+  }
+  .terms_box {
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  .terms_box > a {
+    padding: 0 40px;
+  }
+  .terms_box h3 {
+    font-size: 2vw;
+    line-height: 1;
+  }
+  .terms_box > a > img {
+    width: 4%;
+    height: auto;
+  }
+}

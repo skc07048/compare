@@ -336,6 +336,8 @@
   }
   /* 위에 이미지 영역 */
   .style_top {
+    transform: translateX(0);
+    opacity: 1;
     width: 100%;
   }
   .style_top_wrap {
@@ -351,6 +353,8 @@
   /* 아래 이미지 영역 */
   .style_bottom {
     width: 100%;
+    transform: translateX(0);
+    opacity: 1;
   }
   .style_bottom_wrap {
     height: auto;

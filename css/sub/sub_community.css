@@ -235,6 +235,7 @@
 .post_title {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 .hast_tag {
   width: fit-content;
@@ -258,9 +259,11 @@
   padding-bottom: 0;
 }
 .post_right {
+  display: flex;
   font-size: var(--xs-font-size);
   line-height: var(--xs-line-height);
-  font-weight: 200;
+  font-weight: 300;
+  gap: 20px;
 }
 /* 실시간 사용자 댓글 영역 */
 #comunity_comment {
@@ -311,7 +314,6 @@
   height: fit-content;
   display: flex;
   gap: 40px;
-  margin-bottom: 50px;
   animation: comment-move 20s linear infinite;
 }
 .comment {

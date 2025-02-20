@@ -14,11 +14,13 @@ const swiper = new Swiper(".best_wrap", {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    1024: {},
+    1025: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
     1441: {
       slidesPerView: 3,
       spaceBetween: 40,
-      loop: true,
     },
   },
 });
