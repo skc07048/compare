@@ -1,5 +1,5 @@
 const swiperDesigner = new Swiper(".designer-image-con", {
-  slidesPerView: 5,
+  slidesPerView: 4,
   spaceBetween: 20,
   freeMode: true,
   loop: true,
@@ -21,7 +21,7 @@ const swiperDesigner = new Swiper(".designer-image-con", {
 });
 
 const swiperStyle = new Swiper(".style_image_con", {
-  slidesPerView: 5,
+  slidesPerView: 4,
   spaceBetween: 20,
   freeMode: true,
   loop: true,

@@ -2,6 +2,10 @@ const swiper = new Swiper(".best_wrap", {
   slidesPerView: 3,
   spaceBetween: 40,
   loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     320: {
       slidesPerView: 1,

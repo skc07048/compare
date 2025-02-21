@@ -71,8 +71,10 @@
   position: relative;
   background-position: center;
   background-size: cover;
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 /* 메인 비쥬얼 버튼 */
@@ -113,6 +115,7 @@
   height: 100%;
   object-fit: cover;
   transition: 0.8s;
+  object-position: 0% 10%;
 }
 /* 메인 컨텐츠 마우스 오버 */
 .swiper-slide:hover:not(.custom_card, .style-card) img {

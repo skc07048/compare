@@ -33,7 +33,6 @@ const swiperBest = new Swiper(".best-con", {
       loop: true,
     },
     1441: {
-      slidesPerView: 3.7,
       spaceBetween: 30,
       freeMode: true,
       loop: true,
@@ -42,7 +41,7 @@ const swiperBest = new Swiper(".best-con", {
 });
 
 const swiperTop = new Swiper(".style_top", {
-  slidesPerView: 6,
+  slidesPerView: 5,
   spaceBetween: 20,
   loop: true,
   breakpoints: {
@@ -71,7 +70,6 @@ const swiperTop = new Swiper(".style_top", {
       loop: true,
     },
     1441: {
-      slidesPerView: 5,
       spaceBetween: 20,
       loop: true,
     },
@@ -79,7 +77,7 @@ const swiperTop = new Swiper(".style_top", {
 });
 
 const swiperBottom = new Swiper(".style_bottom", {
-  slidesPerView: 6,
+  slidesPerView: 5,
   spaceBetween: 20,
   loop: true,
   breakpoints: {
@@ -108,7 +106,6 @@ const swiperBottom = new Swiper(".style_bottom", {
       loop: true,
     },
     1441: {
-      slidesPerView: 5,
       spaceBetween: 20,
       loop: true,
     },

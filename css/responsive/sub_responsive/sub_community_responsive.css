@@ -334,14 +334,13 @@
   .board_area {
     width: 90%;
     height: auto;
-    padding: 20px 10px;
+    padding: 20px 30px;
   }
   /* 게시물 영역 */
   .post {
     width: 100%;
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
-    padding: 0 10px;
     padding-bottom: 20px;
   }
   .hast_tag {
@@ -525,14 +524,13 @@
   .board_area {
     width: 90%;
     height: auto;
-    padding: 20px 10px;
+    padding: 20px 40px;
   }
   /* 게시물 영역 */
   .post {
     width: 100%;
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
-    padding: 0 10px;
     padding-bottom: 20px;
   }
   .hast_tag {
@@ -687,14 +685,14 @@
   .board_area {
     width: 90%;
     height: auto;
-    padding: 40px 24px;
+    padding: 40px 60px;
   }
   /* 게시물 영역 */
   .post {
     width: 100%;
     margin-bottom: 0px;
     border-bottom: 1px solid #ddd;
-    padding: 20px 10px;
+    padding: 20px 0px;
     padding-bottom: 20px;
   }
   .hast_tag {
@@ -809,14 +807,14 @@
     line-height: 1.2;
   }
   .user_text > p {
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     margin-bottom: 6px;
   }
   .user_text > p:nth-child(2) {
     margin-bottom: 40px;
   }
   .user_text > p:nth-child(3) {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     margin-bottom: 40px;
   }
   .board_area {

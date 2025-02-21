@@ -101,7 +101,6 @@
   backdrop-filter: blur(5px);
   box-shadow: 0 8px 24px 0 rgba(120, 120, 120, 0.2);
   border-radius: 30px;
-  transition: 1s;
 }
 .service_card > a {
   width: 100%;
@@ -123,9 +122,7 @@
   text-align: center;
   font-weight: 600;
 }
-.service_card:hover {
-  transform: rotateY(180deg);
-}
+
 /* 지원 서비스 컨텐츠 */
 #support_service {
   width: 100%;

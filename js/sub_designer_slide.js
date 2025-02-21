@@ -1,5 +1,5 @@
 const swiper = new Swiper(".placestyle_con", {
-  slidesPerView: 2,
+  slidesPerView: 3,
   spaceBetween: 40,
   loop: true,
   autoplay: {

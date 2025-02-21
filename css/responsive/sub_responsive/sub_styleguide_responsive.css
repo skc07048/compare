@@ -540,7 +540,8 @@
   }
   .style_top_wrap > .top_image {
     max-width: 100vw;
-    max-height: 24vw;
+    max-height: 100vh;
+    height: 50vh;
   }
   /* 아래 이미지 영역 */
   .style_bottom {
@@ -552,7 +553,8 @@
   }
   .style_bottom_wrap > .bottom_image {
     max-width: 100vw;
-    max-height: 24vw;
+    max-height: 100vh;
+    height: 50vh;
   }
 
   /* 비디오 영역 */

@@ -814,7 +814,7 @@
   .designer_image {
     height: auto;
     max-width: 100vw;
-    max-height: 100vw;
+    max-height: 60vh;
   }
   /* 스타일 선택 섹션 */
   .style_btn_box {
@@ -830,7 +830,7 @@
   .style_image {
     height: auto;
     max-width: 100vw;
-    max-height: 100vw;
+    max-height: 35vw;
     overflow: hidden;
   }
   /* 세부 항목 선택 섹션 */
