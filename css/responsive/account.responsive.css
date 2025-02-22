@@ -1,0 +1,195 @@
+@charset "utf-8";
+@import url("./common_responsive.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+/* 모바일 */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+    position: static;
+  }
+
+  /* 로그인 */
+  .account {
+    width: 85%;
+    margin: 30px auto;
+    margin-bottom: 50px;
+    padding: 30px 20px;
+  }
+  .btn_group {
+    width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .btn_group button {
+    font-size: 3.5vw;
+  }
+  #loginForm {
+    width: 100%;
+  }
+  #loginForm h3 {
+    font-size: 6vw;
+  }
+  #user_id {
+    margin: 15px 0;
+    margin-top: 20px;
+  }
+  #user_pw {
+    margin-bottom: 40px;
+  }
+  #loginForm button {
+    font-size: 3.5vw;
+  }
+  /* 회원가입 */
+  #signupForm {
+    width: 100%;
+  }
+  #signupForm h3 {
+    font-size: 6vw;
+  }
+  #sign_id {
+    margin: 15px 0;
+    margin-top: 20px;
+  }
+  #sign_email {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-bottom: 15px;
+  }
+  #sign_pw {
+    margin-bottom: 40px;
+  }
+  #signupForm button {
+    font-size: 3.5vw;
+  }
+  .login_app {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .app {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+/* 태블릿 */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    position: static;
+  }
+  /* 로그인 */
+  .account {
+    width: 85%;
+    margin: 30px auto;
+    margin-bottom: 50px;
+    padding: 60px 40px;
+  }
+  .btn_group {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .btn_group button {
+    font-size: 2.5vw;
+    height: 6vh;
+  }
+  #loginForm {
+    width: 80%;
+  }
+  #loginForm h3 {
+    font-size: 4.5vw;
+  }
+  #user_id {
+    margin: 15px 0;
+    margin-top: 20px;
+  }
+  #user_pw {
+    margin-bottom: 40px;
+  }
+  #loginForm button {
+    font-size: 2.5vw;
+    height: 6vh;
+  }
+  /* 회원가입 */
+  #signupForm {
+    width: 100%;
+  }
+  #signupForm h3 {
+    font-size: 6vw;
+  }
+  #sign_id {
+    margin: 15px 0;
+    margin-top: 20px;
+  }
+  #sign_email {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-bottom: 15px;
+  }
+  #sign_pw {
+    margin-bottom: 40px;
+  }
+  #signupForm button {
+    font-size: 3.5vw;
+    height: 6vh;
+  }
+  .login_app {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+  }
+  .app {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+
+/* 작은 노트북 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    position: static;
+  }
+  /* 로그인 */
+  .account {
+    width: 55%;
+    margin-bottom: 100px;
+    padding: 60px 40px;
+  }
+}
+
+/* 큰 노트북 */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  header {
+    position: static;
+  }
+  /* 로그인 */
+  .account {
+    width: 45%;
+    margin-bottom: 100px;
+    padding: 80px 60px;
+  }
+}
+
+/* 데스크탑 */
+@media screen and (min-width: 1441px) {
+  header {
+    position: static;
+  }
+  /* 로그인 */
+  .account {
+    width: 35%;
+    padding: 80px 40px;
+  }
+}

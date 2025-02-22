@@ -256,6 +256,21 @@
     border-radius: 20px;
     object-position: 50% 30%;
   }
+  .style_card_back {
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  .style_card_back h3 {
+    font-size: 6vw;
+    margin-bottom: 10px;
+  }
+  .style_card_back p {
+    font-size: 3.8vw;
+    margin-bottom: 8px;
+  }
+  .style_card_back p:nth-child(3) {
+    padding-bottom: 20px;
+  }
   /* 섹션4 */
   #sec4 {
     padding: 0;
@@ -689,6 +704,22 @@
     border-radius: 20px;
     object-position: 50% 30%;
   }
+  .style_card_back {
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  .style_card_back h3 {
+    font-size: 5vw;
+    margin-bottom: 40px;
+  }
+  .style_card_back p {
+    font-size: 3vw;
+    margin-bottom: 20px;
+  }
+  .style_card_back p:nth-child(3) {
+    padding-bottom: 20px;
+  }
+  /* sec4 */
   #sec4 {
     padding: 0;
     padding-top: 120px;
@@ -1076,6 +1107,21 @@
     border-radius: 20px;
     object-position: 50% 30%;
   }
+  .style_card_back {
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  .style_card_back h3 {
+    font-size: 4vw;
+    margin-bottom: 40px;
+  }
+  .style_card_back p {
+    font-size: 2vw;
+    margin-bottom: 20px;
+  }
+  .style_card_back p:nth-child(3) {
+    padding-bottom: 20px;
+  }
   /* sec4 */
   #sec4 {
     padding: 0;
@@ -1452,6 +1498,21 @@
     border-radius: 20px;
     object-position: 50% 30%;
   }
+  .style_card_back {
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  .style_card_back h3 {
+    font-size: 3vw;
+    margin-bottom: 50px;
+  }
+  .style_card_back p {
+    font-size: 1.5vw;
+    margin-bottom: 20px;
+  }
+  .style_card_back p:nth-child(3) {
+    padding-bottom: 20px;
+  }
   /* sec4 */
   #sec4 {
     width: 100%;
@@ -1675,6 +1736,22 @@
   /* 버튼 영역 */
   .prt_btn {
     width: 80%;
+  }
+  /* sec3 */
+  .style_card_back {
+    padding: 0 60px;
+    box-sizing: border-box;
+  }
+  .style_card_back h3 {
+    font-size: 2vw;
+    margin-bottom: 60px;
+  }
+  .style_card_back p {
+    font-size: 1.3vw;
+    margin-bottom: 30px;
+  }
+  .style_card_back p:nth-child(3) {
+    padding-bottom: 20px;
   }
   /* sec4 */
   .bg_bottom {

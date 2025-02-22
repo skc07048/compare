@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>compare account</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/account.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive/account.responsive.css" />
+    <!-- js -->
+    <script src="./js/account.js" defer></script>
+    <script src="./js/main_slide.js" defer></script>
+    <script src="./js/all_menu.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <!-- 로고 -->
+        <div class="head_con">
+          <h1>
+            <a href="./index.html">
+              <img src="./img/icons/logo.svg" alt="Compare logo" />
+            </a>
+          </h1>
+          <!-- 메뉴 -->
+          <nav id="gnb">
+            <ul>
+              <li>
+                <a href="./sub/sub_package.html" class="list_wrap">
+                  <div class="list_box">
+                    <p>PACKAGE</p>
+                  </div>
+                  <p class="list_text">PACKAGE</p>
+                </a>
+              </li>
+              <li>
+                <a href="./sub/sub_styleguide.html" class="list_wrap">
+                  <div class="list_box">
+                    <p>STYLEGUIDE</p>
+                  </div>
+                  <p class="list_text">STYLEGUIDE</p>
+                </a>
+              </li>
+              <li>
+                <a href="./sub/sub_designer.html" class="list_wrap">
+                  <div class="list_box">
+                    <p>DESIGNER</p>
+                  </div>
+                  <p class="list_text">DESIGNER</p>
+                </a>
+              </li>
+              <li>
+                <a href="./sub/sub_community.html" class="list_wrap">
+                  <div class="list_box">
+                    <p>COMMUNITY</p>
+                  </div>
+                  <p class="list_text">COMMUNITY</p>
+                </a>
+              </li>
+              <li>
+                <a href="./sub/sub_service.html" class="list_wrap">
+                  <div class="list_box">
+                    <p>SERVICE</p>
+                  </div>
+                  <p class="list_text">SERVICE</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- 아이콘 -->
+          <div class="icon_wrap">
+            <div class="icons">
+              <a href="#">
+                <img src="./img/icons/search.svg" alt="검색" />
+              </a>
+            </div>
+            <div class="icons">
+              <a href="#">
+                <img src="./img/icons/chat.svg" alt="채팅 및 알림" />
+              </a>
+            </div>
+            <div class="icons">
+              <a href="#">
+                <img src="./img/icons/user_info.svg" alt="회원정보메뉴" />
+              </a>
+            </div>
+            <div class="all_menu_btn">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <div class="all_menu">
+              <a href="#">MY PAGE</a>
+              <a href="./sub/sub_package.html">PACKAGE</a>
+              <a href="./sub/sub_styleguide.html">STYLEGUIDE</a>
+              <a href="./sub/sub_designer.html">DESIGNER</a>
+              <a href="./sub/sub_community.html">COMMUNITY</a>
+              <a href="./sub/sub_service.html">SERVICE</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <form action="#" method="post" class="account">
+        <div class="btn_group">
+          <button class="btn active" id="loginBtn" type="button">로그인</button>
+          <button class="btn" id="signupBtn" type="button">회원가입</button>
+        </div>
+
+        <div id="loginForm" class="form active">
+          <h3>로그인</h3>
+          <input id="user_id" type="text" placeholder="아이디" /><br />
+          <input
+            id="user_pw"
+            type="password"
+            placeholder="비밀번호"
+            required
+          /><br />
+          <button type="button">로그인</button>
+        </div>
+
+        <div id="signupForm" class="form">
+          <h3>회원가입</h3>
+          <input id="sign_id" type="text" placeholder="아이디" required /><br />
+          <input
+            id="sign_email"
+            type="email"
+            placeholder="이메일"
+            required
+          /><br />
+          <input
+            id="sign_pw"
+            type="password"
+            placeholder="비밀번호"
+            required
+          /><br />
+          <button type="button">가입하기</button>
+        </div>
+        <div class="login_app">
+          <div class="app">
+            <a
+              href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fwebhp%3Fhl%3Dko%26sa%3DX%26ved%3D0ahUKEwib0oaIwNeLAxVBklYBHa5KAx8QPAgI&ec=GAZAmgQ&hl=ko&passive=true&ifkv=ASSHykqcVQ7vE0nwbK3_kWoR_7mLICynMXuIv804_SCOOHHO72h0-o6I1i6bW_RTHk45lksHNif_2w&ddm=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+            >
+              <img src="./img/account/google.svg" alt="google" />
+            </a>
+          </div>
+          <div class="app">
+            <a
+              href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/"
+            >
+              <img src="./img/account/naver.png" alt="naver" />
+            </a>
+          </div>
+          <div class="app">
+            <a
+              href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fcs.kakao.com%2Fhelps%3Fcategory%3D25#login"
+            >
+              <img src="./img/account/kakao.png" alt="kakao" />
+            </a>
+          </div>
+          <div class="app">
+            <a href="https://www.facebook.com/">
+              <img src="./img/account/facebook.png" alt="facebook" />
+            </a>
+          </div>
+        </div>
+      </form>
+      <footer>
+        <div class="footer_wrap">
+          <div class="footer_logo">
+            <a href="/">
+              <img src="./img/icons/logo.svg" alt="" />
+            </a>
+          </div>
+          <nav class="footer_side">
+            <ul>
+              <li>
+                <a href="#">이용약관</a>
+              </li>
+              <li>
+                <a href="#">개인정보 처리방침</a>
+              </li>
+              <li>
+                <a href="#">위치정보 이용약관</a>
+              </li>
+              <li>
+                <a href="#">접근성 안내</a>
+              </li>
+              <li>
+                <a href="#">공지사항</a>
+              </li>
+              <li>
+                <a href="#">사이버 윤리실</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer_corp">
+            <a href="#">ⓒ COMPARE Corp. All rights reserved</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

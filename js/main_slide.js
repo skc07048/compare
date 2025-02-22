@@ -95,10 +95,10 @@ const swiperStyle = new Swiper(".style-con", {
   slidesPerView: "auto",
   spaceBetween: 50,
   loop: true,
-  autoplay: {
-    delay: 3200,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3200,
+  //   disableOnInteraction: false,
+  // },
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
