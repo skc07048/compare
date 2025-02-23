@@ -13,7 +13,7 @@ const swiperDesigner = new Swiper(".designer-image-con", {
       spaceBetween: 15,
     },
     769: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 15,
     },
     1441: {},
@@ -35,7 +35,7 @@ const swiperStyle = new Swiper(".style_image_con", {
       spaceBetween: 15,
     },
     769: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 15,
     },
     1441: {},

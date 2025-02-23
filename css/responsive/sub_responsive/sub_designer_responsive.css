@@ -89,7 +89,7 @@
   }
   /* 이미지 영역 */
   .place_image {
-    height: 60vw;
+    height: 40vh;
     margin-bottom: 14px;
   }
   .place_image > a > img {
@@ -121,6 +121,7 @@
   /* 디자이너 인포 서브 이미지 */
   .text_bottom > .sub_image {
     width: 55%;
+    height: 15vw;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -153,16 +154,13 @@
   .comment_first {
     width: 100%;
     height: fit-content;
-    display: block;
+    display: flex;
     margin-bottom: 0px;
-    animation: none;
   }
   .comment_second {
-    display: none;
+    margin-bottom: 0;
   }
-  .comment_third {
-    display: none;
-  }
+
   .comment {
     width: 90%;
     height: auto;
@@ -172,16 +170,15 @@
     margin: 10px auto;
   }
   .comment_move {
-    display: block;
+    display: flex;
     gap: 40px;
   }
   .comment_move:nth-of-type(2) {
     display: none;
   }
   .comment > div:first-child {
-    width: 25vw;
-    height: auto;
-    display: none;
+    width: 12vw;
+    height: 12vw;
   }
 
   .comment p {
@@ -192,7 +189,6 @@
     padding: 0 10px;
   }
   .comment > div:last-child {
-    width: 500px;
     height: auto;
     border-radius: 50px;
   }
@@ -277,7 +273,7 @@
   }
   /* 이미지 영역 */
   .place_image {
-    height: 45vw;
+    height: 50vh;
     margin-bottom: 14px;
   }
   .place_image > a > img {
@@ -307,14 +303,13 @@
   }
   /* 디자이너 인포 서브 이미지 */
   .text_bottom > .sub_image {
-    width: 55%;
     display: flex;
     align-items: center;
     gap: 10px;
   }
   .text_bottom > .sub_image div {
-    width: 15vw;
-    height: 15vw;
+    width: 12vw;
+    height: 12vw;
   }
   /* 디자이너 댓글 */
   #designer_comment {
@@ -331,12 +326,10 @@
   .comment_first {
     width: 100%;
     height: fit-content;
-    display: block;
+    display: flex;
     margin-bottom: 0px;
-    animation: none;
   }
   .comment {
-    width: 90%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -345,12 +338,12 @@
     margin: 20px auto;
   }
   .comment_move {
-    display: block;
+    display: flex;
     gap: 40px;
   }
   .comment > div:first-child {
     width: 10vw;
-    height: auto;
+    height: 10vw;
   }
   .comment > div:last-child {
     width: 500px;
@@ -365,11 +358,9 @@
     padding: 0 10px;
   }
   .comment_second {
-    display: none;
+    margin-bottom: 0;
   }
-  .comment_third {
-    display: none;
-  }
+
   .comment_move:nth-of-type(2) {
     display: none;
   }
@@ -378,7 +369,7 @@
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(0);
+      transform: translateX(-68.8%);
     }
   }
 }
