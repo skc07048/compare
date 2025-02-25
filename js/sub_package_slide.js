@@ -1,3 +1,5 @@
+"use strict";
+
 const swiperDesigner = new Swiper(".designer-image-con", {
   slidesPerView: 4,
   spaceBetween: 20,

@@ -1,3 +1,5 @@
+"use strict";
+
 const swiperBest = new Swiper(".best-con", {
   slidesPerView: 3.7,
   spaceBetween: 30,

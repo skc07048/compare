@@ -1,3 +1,5 @@
+"use strict";
+
 const allMenuBtn = document.querySelector(".all_menu_btn");
 const allMenu = document.querySelector(".all_menu");
 

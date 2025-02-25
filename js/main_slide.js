@@ -1,3 +1,5 @@
+"use strict";
+
 //메인 페이지 메인 슬라이더
 const swiperMain = new Swiper(".main-con", {
   effect: "coverflow",

@@ -1,3 +1,5 @@
+"use strict";
+
 const swiper = new Swiper(".placestyle_con", {
   slidesPerView: 3,
   spaceBetween: 40,

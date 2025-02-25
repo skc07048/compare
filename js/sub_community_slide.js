@@ -1,3 +1,5 @@
+"use strict";
+
 const swiper = new Swiper(".best_wrap", {
   slidesPerView: 3,
   spaceBetween: 40,
