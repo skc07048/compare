@@ -16,6 +16,8 @@
     <!-- swiper slide -->
     <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <script src="../js/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -86,7 +88,7 @@
               </a>
             </div>
             <div class="icons">
-              <a href="../account.html">
+              <a href="./account.html">
                 <img src="../img/icons/user_info.svg" alt="회원정보메뉴" />
               </a>
             </div>
@@ -575,232 +577,481 @@
           </div>
           <div class="comment_wrap">
             <div class="comment_box">
-              <!-- 첫번째 코멘트트 -->
-              <div class="comment_first">
-                <div class="comment_move">
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-1.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>와! 이번 신상 너무 예쁘네요! 바로 겟 했어요😍</p>
-                    </div>
+              <div class="comment_move">
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-1.jpg"
+                      alt="댓글 이미지"
+                    />
                   </div>
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-2.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>이번 스타일 완전 취향 저격이에요🔥</p>
-                    </div>
-                  </div>
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-3.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>항상 기대하는데 이번 신상도 대박이네요👍</p>
-                    </div>
+                  <div>
+                    <p>와! 이번 신상 너무 예쁘네요! 바로 겟 했어요😍</p>
                   </div>
                 </div>
-                <div class="comment_move">
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-4.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>컬러감이 너무 예뻐요! 코디하기 딱 좋을 듯💖</p>
-                    </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-2.jpg"
+                      alt="댓글 이미지"
+                    />
                   </div>
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-5.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>이런 스타일 기다렸어요! 얼른 구매해야겠어요🛍️</p>
-                    </div>
-                  </div>
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-6.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>착용감이 좋을 것 같아요! 실물이 궁금하네요👀</p>
-                    </div>
+                  <div>
+                    <p>이번 스타일 완전 취향 저격이에요🔥</p>
                   </div>
                 </div>
-              </div>
-              <!-- 두번째 코멘트트 -->
-              <div class="comment_second">
-                <div class="comment_move">
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-7.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>이거 입고 나가면 시선 집중될 듯! 너무 맘에 들어요💯</p>
-                    </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-3.jpg"
+                      alt="댓글 이미지"
+                    />
                   </div>
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-8.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>
-                        디자인 진짜 잘 뽑혔네요! 역시 기대를 저버리지 않아요👏
-                      </p>
-                    </div>
-                  </div>
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-1.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>이전 컬렉션도 좋았는데 이번에는 더 기대되네요✨</p>
-                    </div>
+                  <div>
+                    <p>항상 기대하는데 이번 신상도 대박이네요👍</p>
                   </div>
                 </div>
-                <div class="comment_move">
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-2.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>
-                        사진만 봐도 고급스러움이 느껴져요! 얼른 사고 싶어요💎
-                      </p>
-                    </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-4.jpg"
+                      alt="댓글 이미지"
+                    />
                   </div>
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-3.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>와우! 친구들이랑 맞춰 입어도 좋을 것 같아요👭</p>
-                    </div>
+                  <div>
+                    <p>컬러감이 너무 예뻐요! 코디하기 딱 좋을 듯💖</p>
                   </div>
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-4.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>유니크한 디자인이 너무 매력적이에요! 강추합니다💯</p>
-                    </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-5.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>이런 스타일 기다렸어요! 얼른 구매해야겠어요🛍️</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-6.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>착용감이 좋을 것 같아요! 실물이 궁금하네요👀</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-1.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>와! 이번 신상 너무 예쁘네요! 바로 겟 했어요😍</p>
                   </div>
                 </div>
               </div>
-              <!-- 세번째 코멘트 -->
-              <div class="comment_third">
-                <div class="comment_move">
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-5.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>
-                        사이즈도 다양해서 너무 좋아요! 고민 없이 결제합니다💳
-                      </p>
-                    </div>
+              <div class="comment_move">
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-1.jpg"
+                      alt="댓글 이미지"
+                    />
                   </div>
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-6.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>이번 시즌 트렌드 반영한 느낌! 패션 감각 최고네요🔥</p>
-                    </div>
-                  </div>
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-7.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>
-                        벌써 인기 많을 것 같아요! 품절되기 전에 사야겠어요💨
-                      </p>
-                    </div>
+                  <div>
+                    <p>와! 이번 신상 너무 예쁘네요! 바로 겟 했어요😍</p>
                   </div>
                 </div>
-                <div class="comment_move">
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-8.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>컬러별로 다 사고 싶어요! 너무 예쁜 조합이에요🌈</p>
-                    </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-2.jpg"
+                      alt="댓글 이미지"
+                    />
                   </div>
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-1.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>
-                        이런 스타일 또 나오면 좋겠어요! 앞으로도 기대할게요😊
-                      </p>
-                    </div>
+                  <div>
+                    <p>이번 스타일 완전 취향 저격이에요🔥</p>
                   </div>
-                  <div class="comment">
-                    <div>
-                      <img
-                        src="../img/sub/sub_community/sub4_sec3/sec3-2.jpg"
-                        alt="댓글 이미지"
-                      />
-                    </div>
-                    <div>
-                      <p>오늘 배송받았는데 실물이 더 예뻐요! 대만족입니다💯</p>
-                    </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-3.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>항상 기대하는데 이번 신상도 대박이네요👍</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-4.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>컬러감이 너무 예뻐요! 코디하기 딱 좋을 듯💖</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-5.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>이런 스타일 기다렸어요! 얼른 구매해야겠어요🛍️</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-6.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>착용감이 좋을 것 같아요! 실물이 궁금하네요👀</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-1.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>와! 이번 신상 너무 예쁘네요! 바로 겟 했어요😍</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comment_box">
+              <div class="comment_move">
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-1.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>와! 이번 신상 너무 예쁘네요! 바로 겟 했어요😍</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-2.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>이번 스타일 완전 취향 저격이에요🔥</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-3.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>항상 기대하는데 이번 신상도 대박이네요👍</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-4.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>컬러감이 너무 예뻐요! 코디하기 딱 좋을 듯💖</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-5.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>이런 스타일 기다렸어요! 얼른 구매해야겠어요🛍️</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-6.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>착용감이 좋을 것 같아요! 실물이 궁금하네요👀</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-1.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>와! 이번 신상 너무 예쁘네요! 바로 겟 했어요😍</p>
+                  </div>
+                </div>
+              </div>
+              <div class="comment_move">
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-1.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>와! 이번 신상 너무 예쁘네요! 바로 겟 했어요😍</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-2.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>이번 스타일 완전 취향 저격이에요🔥</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-3.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>항상 기대하는데 이번 신상도 대박이네요👍</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-4.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>컬러감이 너무 예뻐요! 코디하기 딱 좋을 듯💖</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-5.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>이런 스타일 기다렸어요! 얼른 구매해야겠어요🛍️</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-6.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>착용감이 좋을 것 같아요! 실물이 궁금하네요👀</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-1.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>와! 이번 신상 너무 예쁘네요! 바로 겟 했어요😍</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comment_box">
+              <div class="comment_move">
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-1.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>와! 이번 신상 너무 예쁘네요! 바로 겟 했어요😍</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-2.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>이번 스타일 완전 취향 저격이에요🔥</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-3.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>항상 기대하는데 이번 신상도 대박이네요👍</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-4.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>컬러감이 너무 예뻐요! 코디하기 딱 좋을 듯💖</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-5.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>이런 스타일 기다렸어요! 얼른 구매해야겠어요🛍️</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-6.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>착용감이 좋을 것 같아요! 실물이 궁금하네요👀</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-1.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>와! 이번 신상 너무 예쁘네요! 바로 겟 했어요😍</p>
+                  </div>
+                </div>
+              </div>
+              <div class="comment_move">
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-1.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>와! 이번 신상 너무 예쁘네요! 바로 겟 했어요😍</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-2.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>이번 스타일 완전 취향 저격이에요🔥</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-3.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>항상 기대하는데 이번 신상도 대박이네요👍</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-4.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>컬러감이 너무 예뻐요! 코디하기 딱 좋을 듯💖</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-5.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>이런 스타일 기다렸어요! 얼른 구매해야겠어요🛍️</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-6.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>착용감이 좋을 것 같아요! 실물이 궁금하네요👀</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div>
+                    <img
+                      src="../img/sub/sub_community/sub4_sec3/sec3-1.jpg"
+                      alt="댓글 이미지"
+                    />
+                  </div>
+                  <div>
+                    <p>와! 이번 신상 너무 예쁘네요! 바로 겟 했어요😍</p>
                   </div>
                 </div>
               </div>
@@ -848,5 +1099,7 @@
     <script src="../js/all_menu.js"></script>
     <!-- slide js -->
     <script src="../js/sub_community_slide.js"></script>
+    <!-- roling -->
+    <script src="../js/roling_banner.js"></script>
   </body>
 </html>
