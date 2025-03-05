@@ -247,7 +247,7 @@
   width: 100%;
   height: fit-content;
   display: flex;
-  gap: 60px;
+  gap: 20px;
   margin-bottom: 40px;
 }
 .comment_box:nth-child(3) {
@@ -290,4 +290,5 @@
   display: grid;
   grid-template-columns: repeat(7, 600px);
   grid-column-gap: 60px;
+  margin-right: 20px;
 }
