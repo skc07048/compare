@@ -795,11 +795,11 @@
     font-size: 18px;
   }
   .text_box > h3 {
-    font-size: clamp(18px, 5vw, 24px);
+    font-size: 3.5vw;
     line-height: 1.4;
   }
   .review_right > p {
-    font-size: clamp(14px, 5vw, 18px);
+    font-size: 3.2vw;
   }
   .review_right > p > span {
     display: none;
@@ -826,6 +826,7 @@
   /* 위에 컨텐츠 왼쪽 영역 */
   .left_box {
     width: 100%;
+    height: auto;
     padding: 60px 30px;
   }
   .text_wrap {
@@ -1182,6 +1183,10 @@
   .review_right {
     width: 60%;
     height: 44vw;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .text_box {
     flex-direction: column;
@@ -1196,7 +1201,7 @@
     font-size: 18px;
   }
   .review_right > p {
-    font-size: clamp(14px, 2.1vw, 22px);
+    font-size: 1.8vw;
   }
   .review_right > p > span {
     display: none;
@@ -1359,8 +1364,7 @@
   }
   /* sec1 오른쪽 영역 */
   .chat_right {
-    width: 60%;
-    height: 0;
+    width: 55%;
     padding: 0 20px;
     box-sizing: border-box;
   }
@@ -1574,13 +1578,16 @@
     width: 60%;
     height: 36vw;
     padding: 32px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .text_box {
     gap: 14px;
     margin-top: 0px;
   }
   .text_box > h3 {
-    font-size: clamp(18px, 1.9vw, 28px);
+    font-size: 1.8vw;
     line-height: 1.2;
   }
   .text_box > div {
@@ -1588,7 +1595,7 @@
     padding: 10px 16px;
   }
   .review_right > p {
-    font-size: clamp(14px, 1.4vw, 23px);
+    font-size: 1.2vw;
   }
   .review_point {
     margin: 24px 0;
@@ -1629,11 +1636,11 @@
     font-size: 18px;
   }
   .text_wrap > h3 {
-    font-size: clamp(23px, 2.2vw, 34px);
+    font-size: 1.7vw;
     line-height: 1.4;
   }
   .left_box > p {
-    font-size: clamp(14px, 1.5vw, 28px);
+    font-size: 1.2vw;
   }
   /* 위에 오른쪽 영역 */
   .right_box {
@@ -1659,7 +1666,7 @@
     padding: 30px 60px;
   }
   .package_right > p {
-    font-size: clamp(14px, 1.5vw, 28px);
+    font-size: 1.2vw;
   }
 }
 /* 데스크탑 */
@@ -1691,35 +1698,7 @@
     font-size: clamp(22px, 1.8vw, 30px);
     line-height: 1.4;
   }
-  /* 폰 이미지 영역 */
-  .phone_con > img {
-    top: -42%;
-    left: 37%;
-  }
-  /* 채팅 박스 영역 */
-  .chat_box {
-    position: absolute;
-  }
-  .chat_btn {
-    width: 80%;
-  }
 
-  /* 채팅 박스 순서 */
-  .chat_box:nth-of-type(1) {
-    height: 450px;
-    top: -2%;
-    left: -25%;
-  }
-  .chat_box:nth-of-type(2) {
-    height: 250px;
-    top: 87%;
-    left: -4%;
-  }
-  .chat_box:nth-of-type(3) {
-    height: 350px;
-    top: 136%;
-    left: -25%;
-  }
   /* sec2 */
   .prt_wrap > h2 {
     margin-right: 4%;
@@ -1777,34 +1756,11 @@
     width: 95%;
   }
   .info_top {
-    height: 500px;
-    gap: 20px;
     justify-content: center;
   }
-  /* 위에 컨텐츠 왼쪽 영역 */
-  .left_box {
-    height: auto;
-  }
-  .left_box > p {
-    font-size: clamp(20px, 1.5vw, 23px);
-  }
-  /* 위에 오른쪽 영역 */
-  .right_box {
-    height: auto;
-  }
+
   /* 아래쪽 영역 */
   .info_bottom {
-    height: 500px;
     justify-content: center;
-    gap: 20px;
-  }
-  .package_left {
-    height: 100%;
-  }
-  .package_left > a {
-    height: 100%;
-  }
-  .package_right {
-    height: 100%;
   }
 }
